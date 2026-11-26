@@ -1,2135 +1,2138 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114134030', 'ym');
-
-    ym(114134030, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/114134030" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
-
-  <meta name="google-site-verification" content="7LyFX4itMZCDm9z-XtNQLKPpQ9LcR3Oac7c__GPblbY" />
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO META TAGS -->
-  <title>Репетитор по эконометрике и статистике онлайн (ВШЭ, МГУ) — ANDREY STAT LAB</title>
-  <meta name="description" content="Частный репетитор по эконометрике, математической статистике, теории вероятностей и биостатистике онлайн (Москва и весь мир). Подготовка к экзаменам НИУ ВШЭ, МГУ, МГИМО, расчёты для ВКР и диссертаций в SPSS, Jamovi, Stata, R, Python. Индивидуально и в мини-группах.">
-  <meta name="keywords" content="репетитор по эконометрике, репетитор по статистике, репетитор по математической статистике, репетитор по теории вероятностей, репетитор по биостатистике, эконометрика ВШЭ репетитор, статистика для психологов репетитор, SPSS, Jamovi, Stata, RStudio, Python, GARCH, панельные данные, подготовка к экзамену по эконометрике онлайн">
-  
-  <!-- OPEN GRAPH -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="ANDREY STAT LAB — Репетитор и ментор по эконометрике, статистике и анализу данных">
-  <meta property="og:description" content="Наука и высшая школа: учимся считать и читать то, что посчитали. Индивидуальные и групповые занятия онлайн на русском и английском.">
-
-  <!-- МИКРОРАЗМЕТКА SCHEMA.ORG -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "ANDREY STAT LAB",
-    "description": "Частный репетитор и ментор по эконометрике, математической статистике, теории вероятностей, биостатистике и анализу данных онлайн.",
-    "areaServed": ["Москва", "Россия", "Мир"],
-    "founder": {
-      "@type": "Person",
-      "name": "Гладий Андрей Васильевич",
-      "jobTitle": "Репетитор по эконометрике и статистике, магистр машинного обучения НИУ ВШЭ"
-    }
-  }
-  </script>
-
-  <!-- Шрифты -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <style>
-    :root {
-      --bg-main: #F6F3EC;        /* Тёплый светло-бежевый фон */
-      --bg-card: #FCFBF8;        /* Почти белый тёплый лист */
-      --bg-muted: #EBE6DA;       /* Плашки и второстепенные блоки */
-      --bg-dark: #1C1B18;        /* Глубокий графит для контрастной секции */
-      --bg-dark-card: #262420;
-      --text-main: #1F1E1B;      /* Глубокий графит */
-      --text-muted: #5C584F;     /* Приглушённый серо-коричневый */
-      --accent: #722626;         /* Благородный винный */
-      --accent-hover: #581B1B;
-      --accent-soft: #F3E8E6;
-      --border: #DCD5C7;
-      --radius: 14px;
-      --shadow: 0 10px 30px rgba(31, 30, 27, 0.05);
-      --shadow-hover: 0 16px 36px rgba(114, 38, 38, 0.08);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-color: var(--bg-main);
-      color: var(--text-main);
-      font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
-      line-height: 1.6;
-      font-size: 16px;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    h1, h2, h3, .serif {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      line-height: 1.15;
-      font-weight: 700;
-    }
-
-    .container {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    section {
-      padding: 76px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    /* ШАПКА */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(246, 243, 236, 0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-      padding: 14px 0;
-    }
-
-    .nav-wrap {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      white-space: nowrap;
-    }
-
-    .brand {
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      font-size: 18px;
-      color: var(--text-main);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .brand span {
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 22px;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    .header-contacts {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 14.5px;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      cursor: pointer;
-      border: 1px solid transparent;
-    }
-
-    .btn-sm {
-      padding: 9px 14px;
-      font-size: 13px;
-      border-radius: 7px;
-    }
-
-    .btn-primary {
-      background-color: var(--accent);
-      color: #FFF;
-    }
-
-    .btn-primary:hover {
-      background-color: var(--accent-hover);
-      transform: translateY(-1px);
-    }
-
-    .btn-outline {
-      background-color: transparent;
-      color: var(--text-main);
-      border-color: var(--text-main);
-    }
-
-    .btn-outline:hover {
-      background-color: var(--text-main);
-      color: #FFF;
-    }
-
-    .btn-soft {
-      background-color: var(--bg-muted);
-      color: var(--text-main);
-      border-color: var(--border);
-    }
-
-    .btn-soft:hover {
-      background-color: var(--border);
-      color: var(--accent);
-    }
-
-    /* ПЕРВЫЙ ЭКРАН (HERO) */
-    .hero {
-      padding: 56px 0 64px;
-      text-align: center;
-    }
-
-    .hero-tag {
-      display: inline-block;
-      padding: 6px 16px;
-      background: var(--bg-muted);
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 22px;
-    }
-
-    .hero h1 {
-      font-size: clamp(36px, 5vw, 62px);
-      max-width: 920px;
-      margin: 0 auto 20px;
-      color: var(--text-main);
-    }
-
-    .hero-sub {
-      font-size: clamp(17px, 2vw, 20px);
-      color: var(--text-muted);
-      max-width: 800px;
-      margin: 0 auto 28px;
-    }
-
-    .hero-quote {
-      max-width: 740px;
-      margin: 0 auto 30px;
-      padding: 18px 28px;
-      background: var(--bg-card);
-      border-left: 4px solid var(--accent);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      font-style: italic;
-      color: var(--text-main);
-      box-shadow: var(--shadow);
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 18px;
-    }
-
-    .hero-platforms-bar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-      font-size: 13.5px;
-      color: var(--text-muted);
-    }
-
-    .platform-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 6px 14px;
-      border-radius: 100px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      color: var(--text-main);
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-      box-shadow: var(--shadow);
-    }
-
-    .platform-link:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      transform: translateY(-1px);
-    }
-
-    .platform-star {
-      color: var(--accent);
-      font-weight: 800;
-    }
-
-    /* ГОРИЗОНТАЛЬНЫЙ БАННЕР С ВАШИМ ФАЙЛОМ banner.jpg */
-    .hero-banner {
-      width: 100%;
-      height: 350px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      background: linear-gradient(135deg, #EAE3D5 0%, #DFD6C3 50%, #EFECE4 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 32px;
-      box-shadow: var(--shadow);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-banner-img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 1;
-    }
-
-    .hero-banner-overlay {
-      position: relative;
-      z-index: 2;
-      background: rgba(252, 251, 248, 0.92);
-      backdrop-filter: blur(8px);
-      padding: 26px 38px;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      max-width: 720px;
-    }
-
-    .hero-banner-overlay h2 {
-      font-size: 28px;
-      margin-bottom: 8px;
-      color: var(--accent);
-    }
-
-    .hero-banner-overlay p {
-      font-size: 14.5px;
-      color: var(--text-muted);
-    }
-
-    /* ПОЛОСА ИНСТРУМЕНТОВ И ВУЗОВ */
-    .trust-strip {
-      background: var(--bg-card);
-      border-bottom: 1px solid var(--border);
-      padding: 18px 0;
-    }
-
-    .trust-strip-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .trust-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .trust-label {
-      font-size: 11.5px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--text-muted);
-      font-weight: 700;
-      margin-right: 4px;
-    }
-
-    .tool-pill {
-      padding: 4px 11px;
-      border-radius: 6px;
-      background: var(--bg-main);
-      border: 1px solid var(--border);
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    .uni-pill {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--accent);
-      padding: 0 6px;
-    }
-
-    /* ЗАГОЛОВКИ СЕКЦИЙ */
-    .section-header {
-      margin-bottom: 44px;
-    }
-
-    .section-label {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--accent);
-      font-weight: 700;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .section-title {
-      font-size: clamp(30px, 4vw, 44px);
-      margin-bottom: 14px;
-    }
-
-    .section-desc {
-      color: var(--text-muted);
-      max-width: 740px;
-      font-size: 17px;
-    }
-
-    /* КОМУ ПРИГОДИТСЯ (POV) */
-    .pov-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .pov-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px;
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .pov-card:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .pov-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 14px;
-    }
-
-    .pov-badge {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      padding: 4px 10px;
-      border-radius: 6px;
-      background: var(--accent-soft);
-      color: var(--accent);
-    }
-
-    .pov-symbol {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 24px;
-      font-weight: 700;
-      color: #C2B69F;
-      line-height: 1;
-    }
-
-    .pov-quote {
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 16px;
-    }
-
-    .pov-answer {
-      font-size: 14px;
-      color: var(--text-muted);
-      border-top: 1px dashed var(--border);
-      padding-top: 12px;
-    }
-
-    /* Зачёркнутая карточка "просто решить" */
-    .pov-card.crossed {
-      background: #EFECE6;
-      border: 1px dashed #B8AFA0;
-    }
-
-    .pov-card.crossed .pov-quote {
-      text-decoration: line-through;
-      color: #8A8377;
-    }
-
-    .pov-card.crossed .pov-badge {
-      background: #DFD9CD;
-      color: #6E685F;
-    }
-
-    .pov-card.crossed .pov-answer {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    /* ЭКСПЕРТ (РАСШИРЕННЫЙ БЛОК О ВАС + МЕССЕНДЖЕРЫ И АНКЕТЫ) */
-    .expert-custom-grid {
-      display: grid;
-      grid-template-columns: 360px 1fr;
-      gap: 32px;
-      align-items: start;
-    }
-
-    .expert-bio {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px 32px;
-      box-shadow: var(--shadow);
-    }
-
-    .expert-photo-card {
-      padding: 22px;
-    }
-
-    .expert-photo-box {
-      width: 100%;
-      aspect-ratio: 5 / 6;
-      border-radius: 10px;
-      overflow: hidden;
-      background: var(--bg-muted);
-      border: 1px solid var(--border);
-      margin-bottom: 18px;
-    }
-
-    .expert-photo-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .expert-bio h3 {
-      font-size: 34px;
-      margin-bottom: 6px;
-    }
-
-    .expert-creds {
-      color: var(--accent);
-      font-weight: 700;
-      font-size: 15px;
-      margin-bottom: 18px;
-    }
-
-    .stats-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      padding: 14px 0;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      text-align: center;
-      margin-bottom: 16px;
-    }
-
-    .stat-num {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 28px;
-      font-weight: 700;
-      color: var(--accent);
-      display: block;
-    }
-
-    .stat-label {
-      font-size: 12px;
-      color: var(--text-muted);
-    }
-
-    .expert-direct-links {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-
-    .expert-direct-label {
-      font-size: 11.5px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      font-weight: 700;
-      margin-bottom: 2px;
-    }
-
-    .messenger-grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-    }
-
-    .profile-grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-      margin-top: 4px;
-    }
-
-    .mini-contact-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 9px 10px;
-      border-radius: 8px;
-      font-size: 13px;
-      font-weight: 700;
-      text-decoration: none;
-      border: 1px solid var(--border);
-      background: var(--bg-main);
-      color: var(--text-main);
-      transition: all 0.2s;
-    }
-
-    .mini-contact-btn:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: var(--accent-soft);
-    }
-
-    .mini-contact-btn.primary-tg {
-      background: var(--accent);
-      color: #FFF;
-      border-color: var(--accent);
-    }
-
-    .mini-contact-btn.primary-tg:hover {
-      background: var(--accent-hover);
-      color: #FFF;
-    }
-
-    .bio-highlights {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin: 20px 0;
-      padding: 16px;
-      background: #F5F1E8;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-    }
-
-    .bio-hl-item strong {
-      display: block;
-      font-size: 13.5px;
-      color: var(--accent);
-      margin-bottom: 3px;
-    }
-
-    .bio-hl-item span {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.4;
-      display: block;
-    }
-
-    .books-shelf {
-      margin-top: 18px;
-      padding-top: 16px;
-      border-top: 1px dashed var(--border);
-    }
-
-    .books-shelf-title {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      font-weight: 700;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .book-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .book-tag {
-      font-size: 12.5px;
-      font-weight: 600;
-      background: var(--bg-main);
-      border: 1px solid var(--border);
-      padding: 4px 10px;
-      border-radius: 6px;
-      color: var(--text-main);
-    }
-
-    .expert-perks-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    .perk-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px 26px;
-      box-shadow: var(--shadow);
-    }
-
-    .perk-card h4 {
-      font-size: 17px;
-      margin-bottom: 6px;
-      color: var(--accent);
-    }
-
-    .perk-card p {
-      font-size: 14.5px;
-      color: var(--text-muted);
-    }
-
-    /* ТЁМНЫЙ КОНТРАСТНЫЙ БЛОК: ЧТО МЫ ДЕЛАЕМ */
-    .dark-section {
-      background-color: var(--bg-dark);
-      color: #F4F0E6;
-      border-bottom: 1px solid #33302B;
-    }
-
-    .dark-section .section-label {
-      color: #DF9E9E;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 36px;
-      align-items: stretch;
-      margin-bottom: 44px;
-    }
-
-    .pain-box {
-      background: var(--bg-dark-card);
-      border: 1px solid #38352E;
-      border-radius: var(--radius);
-      padding: 32px;
-    }
-
-    .pain-box p {
-      margin-bottom: 16px;
-      color: #DDD7CA;
-    }
-
-    .bad-strategies {
-      margin: 20px 0;
-      padding: 18px 20px;
-      background: rgba(114, 38, 38, 0.24);
-      border: 1px solid rgba(223, 158, 158, 0.25);
-      border-radius: 10px;
-      font-size: 15px;
-      color: #F4F0E6;
-    }
-
-    .bad-strategies li {
-      margin-left: 18px;
-      margin-bottom: 10px;
-    }
-
-    .goals-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      justify-content: space-between;
-    }
-
-    .goal-card {
-      background: var(--bg-dark-card);
-      border: 1px solid #38352E;
-      border-radius: var(--radius);
-      padding: 22px 26px;
-    }
-
-    .goal-card h4 {
-      font-size: 18px;
-      margin-bottom: 6px;
-      color: #E5A9A9;
-    }
-
-    .goal-card p {
-      color: #C2BCB0;
-      font-size: 15px;
-    }
-
-    .format-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      margin-top: 24px;
-    }
-
-    .format-item {
-      background: var(--bg-dark-card);
-      border: 1px solid #38352E;
-      border-radius: var(--radius);
-      padding: 26px;
-      display: flex;
-      gap: 18px;
-      align-items: flex-start;
-    }
-
-    .roman-num {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 32px;
-      font-weight: 700;
-      color: #DF9E9E;
-      line-height: 1;
-      min-width: 32px;
-    }
-
-    .format-item h4 {
-      font-size: 17px;
-      margin-bottom: 8px;
-      color: #FFF;
-    }
-
-    .format-item p {
-      font-size: 14.5px;
-      color: #B5AFA2;
-    }
-
-    /* ДОРОЖНАЯ КАРТА ПРОЦЕССА (ГОРИЗОНТАЛЬНАЯ ЛИНИЯ ШАГОВ) */
-    .process-strip {
-      margin-top: 44px;
-      padding-top: 36px;
-      border-top: 1px solid #38352E;
-    }
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .process-step {
-      border-left: 2px solid #722626;
-      padding-left: 16px;
-    }
-
-    .process-step-num {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #DF9E9E;
-      font-weight: 700;
-      display: block;
-      margin-bottom: 4px;
-    }
-
-    .process-step h5 {
-      font-size: 16px;
-      color: #FFF;
-      margin-bottom: 6px;
-    }
-
-    .process-step p {
-      font-size: 13.5px;
-      color: #B5AFA2;
-    }
-
-    /* ГЛАВНЫЙ РАЗДЕЛ: ОБУЧЕНИЕ (ТАБЛИЦА В 3 КОЛОНКИ С ВОДЯНЫМИ ЗНАКАМИ) */
-    .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .course-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 30px 26px;
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .course-card:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .course-watermark {
-      position: absolute;
-      top: 12px;
-      right: 18px;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 44px;
-      font-weight: 700;
-      font-style: italic;
-      color: rgba(114, 38, 38, 0.08);
-      pointer-events: none;
-      user-select: none;
-      line-height: 1;
-    }
-
-    .course-num {
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      color: var(--accent);
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .course-title {
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    .course-tagline {
-      font-style: italic;
-      color: var(--accent);
-      background: #F5EFE6;
-      padding: 10px 14px;
-      border-radius: 8px;
-      font-size: 14.5px;
-      margin-bottom: 16px;
-      font-weight: 500;
-    }
-
-    .course-summary-points {
-      list-style: none;
-      margin-bottom: 20px;
-      font-size: 14.5px;
-      color: var(--text-muted);
-    }
-
-    .course-summary-points li {
-      position: relative;
-      padding-left: 16px;
-      margin-bottom: 8px;
-    }
-
-    .course-summary-points li::before {
-      content: "•";
-      color: var(--accent);
-      font-weight: bold;
-      position: absolute;
-      left: 0;
-    }
-
-    details.syllabus {
-      margin-top: auto;
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
-    }
-
-    details.syllabus summary {
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 14px;
-      color: var(--accent);
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    details.syllabus summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details.syllabus summary::after {
-      content: "+ Развернуть темы";
-      font-size: 12px;
-      background: var(--bg-muted);
-      padding: 4px 10px;
-      border-radius: 6px;
-    }
-
-    details.syllabus[open] summary::after {
-      content: "− Свернуть";
-    }
-
-    .syllabus-content {
-      margin-top: 14px;
-      font-size: 13.5px;
-      color: var(--text-muted);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      line-height: 1.5;
-    }
-
-    .syllabus-content strong {
-      color: var(--text-main);
-    }
-
-    .ml-bar {
-      margin-top: 24px;
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 26px 30px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .ml-bar h4 {
-      font-size: 20px;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-
-    .ml-bar p {
-      font-size: 14.5px;
-      color: var(--text-muted);
-    }
-
-    /* ОТЗЫВЫ + ПЛОЩАДКИ (ПРОФИ, АВИТО, ТГ) */
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-bottom: 28px;
-    }
-
-    .review-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px;
-      box-shadow: var(--shadow);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .review-quote-mark {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 54px;
-      line-height: 0.8;
-      color: rgba(114, 38, 38, 0.15);
-      position: absolute;
-      top: 18px;
-      right: 22px;
-      pointer-events: none;
-    }
-
-    .review-tag {
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 12px;
-      display: inline-block;
-      background: var(--accent-soft);
-      padding: 4px 10px;
-      border-radius: 6px;
-      align-self: flex-start;
-    }
-
-    .review-text {
-      font-size: 15px;
-      font-style: italic;
-      margin-bottom: 16px;
-    }
-
-    .review-author {
-      font-size: 13px;
-      color: var(--text-muted);
-      font-weight: 600;
-      border-top: 1px solid var(--border);
-      padding-top: 12px;
-    }
-
-    .external-reviews-bar {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 28px;
-      box-shadow: var(--shadow);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .external-reviews-text h4 {
-      font-size: 22px;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      color: var(--text-main);
-      margin-bottom: 4px;
-    }
-
-    .external-reviews-text p {
-      font-size: 14px;
-      color: var(--text-muted);
-    }
-
-    .external-reviews-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    /* ФОРМАТЫ И ЦЕНЫ */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 32px;
-    }
-
-    .price-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 32px 28px;
-      box-shadow: var(--shadow);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .price-card.featured {
-      border: 2px solid var(--accent);
-      background: #FAF6EE;
-    }
-
-    .price-amount {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 44px;
-      font-weight: 700;
-      color: var(--accent);
-      margin: 12px 0;
-    }
-
-    .price-desc {
-      font-size: 14.5px;
-      color: var(--text-muted);
-      margin-bottom: 20px;
-    }
-
-    /* FAQ + КАРТОЧКА СВЯЗИ СО ВСЕМИ МЕССЕНДЖЕРАМИ */
-    .faq-layout {
-      display: grid;
-      grid-template-columns: 1fr 370px;
-      gap: 32px;
-      align-items: start;
-    }
-
-    .faq-list {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    details.faq-item {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px 26px;
-      box-shadow: var(--shadow);
-    }
-
-    details.faq-item summary {
-      font-weight: 700;
-      font-size: 17px;
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-    }
-
-    details.faq-item summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details.faq-item summary::after {
-      content: "+";
-      font-size: 22px;
-      color: var(--accent);
-    }
-
-    details.faq-item[open] summary::after {
-      content: "−";
-    }
-
-    details.faq-item p {
-      margin-top: 12px;
-      color: var(--text-muted);
-      font-size: 15px;
-    }
-
-    .faq-cta-box {
-      background: var(--accent);
-      color: #FFF;
-      border-radius: var(--radius);
-      padding: 30px 26px;
-      box-shadow: var(--shadow);
-      position: sticky;
-      top: 96px;
-    }
-
-    .faq-cta-box h3 {
-      font-size: 30px;
-      margin-bottom: 10px;
-      color: #FFF;
-    }
-
-    .faq-cta-box p {
-      font-size: 14.5px;
-      color: rgba(255, 255, 255, 0.88);
-      margin-bottom: 20px;
-    }
-
-    .cta-buttons-stack {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .btn-white {
-      background: #FFF;
-      color: var(--accent);
-      width: 100%;
-      font-weight: 700;
-    }
-
-    .btn-white:hover {
-      background: var(--bg-main);
-    }
-
-    .cta-row-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-
-    .btn-ghost-white {
-      background: rgba(255, 255, 255, 0.12);
-      color: #FFF;
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      width: 100%;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 10px 14px;
-    }
-
-    .btn-ghost-white:hover {
-      background: rgba(255, 255, 255, 0.24);
-    }
-
-    .cta-profiles-divider {
-      margin: 18px 0 12px;
-      border-top: 1px solid rgba(255, 255, 255, 0.22);
-      padding-top: 14px;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.75);
-      font-weight: 700;
-    }
-
-    /* ПОДВАЛ */
-    footer {
-      padding: 56px 0;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 14px;
-    }
-
-    .footer-links-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin: 18px 0 24px;
-    }
-
-    .seo-footer-text {
-      font-size: 12.5px;
-      color: #8A8377;
-      max-width: 880px;
-      margin: 28px auto 0;
-      line-height: 1.5;
-    }
-
-    /* АДАПТИВ ДЛЯ МОБИЛЬНЫХ */
-    @media (max-width: 980px) {
-      .two-col,
-      .expert-custom-grid,
-      .ml-bar,
-      .faq-layout {
-        grid-template-columns: 1fr;
-      }
-      .pov-grid,
-      .courses-grid,
-      .pricing-grid,
-      .reviews-grid,
-      .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .nav-links {
-        display: none;
-      }
-      .expert-photo-card {
-        max-width: 380px;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .pov-grid,
-      .courses-grid,
-      .pricing-grid,
-      .reviews-grid,
-      .format-grid,
-      .expert-perks-grid,
-      .process-grid,
-      .bio-highlights {
-        grid-template-columns: 1fr;
-      }
-      section {
-        padding: 48px 0;
-      }
-      .hero-banner {
-        height: auto;
-        min-height: 280px;
-        padding: 20px;
-      }
-      .hero-banner-overlay {
-        padding: 20px;
-      }
-      .header-contacts .btn-soft {
-        display: none;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="7LyFX4itMZCDm9z-XtNQLKPpQ9LcR3Oac7c__GPblbY" />
+    
+    <!-- SEO Meta Tags -->
+<title>Гладий Андрей Васильевич — репетитор по эконометрике и статистике (ВШЭ, МГУ) | ANDREY STAT LAB</title>
+<meta name="description" content="Гладий Андрей Васильевич (ANDREY STAT LAB) — индивидуальные и групповые консультации (3000 ₽/ч) по эконометрике, матстатистике, биостатистике и анализу данных (R, Python, Stata, SPSS, Jamovi). Магистр НИУ ВШЭ.">
+    <meta name="keywords" content="репетитор по эконометрике, репетитор по статистике, математическая статистика, теория вероятностей, помощь с ВКР, анализ данных в R, Stata, SPSS, Jamovi, Python, эконометрика ВШЭ, эконометрика МГУ, биостатистика">
+    <meta name="author" content="Гладий Андрей Васильевич">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://andreystatlab.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ANDREY STAT LAB — Репетитор по эконометрике, статистике и анализу данных">
+    <meta property="og:description" content="Консультации и обучение: 3 000 ₽/час. Эконометрика, статистика, R, Python, Stata, SPSS, Jamovi. Без написания работ на заказ — учимся понимать и защищать свои исследования.">
+    <meta property="og:url" content="https://andreystatlab.github.io/">
+    <meta property="og:image" content="https://andreystatlab.github.io/banner.jpg">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Schema.org (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "ANDREY STAT LAB",
+      "url": "https://andreystatlab.github.io/",
+      "logo": "https://andreystatlab.github.io/photo.jpg",
+      "image": "https://andreystatlab.github.io/banner.jpg",
+      "description": "Индивидуальные занятия и консультации по эконометрике, математической статистике, теории вероятностей и анализу данных (R, Python, Stata, SPSS, Jamovi). Только обучение, без гострайтинга.",
+      "founder": {
+        "@type": "Person",
+        "name": "Гладий Андрей Васильевич",
+        "jobTitle": "Репетитор по эконометрике и статистике, магистр машинного обучения НИУ ВШЭ",
+        "alumniOf": "НИУ ВШЭ (Высшая школа экономики)"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "3000",
+        "priceCurrency": "RUB",
+        "description": "Индивидуальная консультация (60 минут)"
+      },
+      "sameAs": [
+        "https://t.me/andrey_stat_lab",
+        "https://profi.ru/profile/GladiyAV/",
+        "https://www.avito.ru/brands/cc0873923316e471b132917fe8594988",
+        "http://vk.com/aglady"
+      ]
+    }
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114134030', 'ym');
+
+        ym(114134030, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/114134030" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-main: #F6F3EC;
+            --bg-card: #FCFBF8;
+            --bg-muted: #EBE6DA;
+            --bg-dark: #1C1B18;
+            --bg-dark-card: #262420;
+            --text-main: #1F1E1B;
+            --text-muted: #5C584F;
+            --accent: #722626;
+            --accent-hover: #581B1B;
+            --accent-soft: #F3E8E6;
+            --border: #DCD5C7;
+            --radius: 14px;
+            --shadow: 0 8px 30px rgba(31, 30, 27, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 84px;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 17px;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, .serif {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            line-height: 1.18;
+            font-weight: 700;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .container {
+            max-width: 1160px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 64px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Удобные маркированные списки для мобильного чтения */
+        .clean-list {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0 0;
+        }
+        .clean-list li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 12px;
+            font-size: 16.5px;
+            line-height: 1.55;
+            color: var(--text-main);
+        }
+        .clean-list li:last-child {
+            margin-bottom: 0;
+        }
+        .clean-list li::before {
+            content: "•";
+            position: absolute;
+            left: 4px;
+            top: 0;
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(246, 243, 236, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand span {
+            font-family: 'Manrope', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            border-left: 1px solid var(--border);
+            padding-left: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 16px 28px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        .btn-sm {
+            padding: 10px 16px;
+            font-size: 13.5px;
+            border-radius: 8px;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(114, 38, 38, 0.22);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--border);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background-color: var(--bg-card);
+        }
+
+        .btn-soft {
+            background-color: var(--accent-soft);
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        .btn-soft:hover {
+            background-color: #e6d3d0;
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--accent);
+            font-weight: 800;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+        }
+        .btn-white:hover {
+            background: var(--bg-main);
+        }
+
+        /* Section Headings */
+        .section-header {
+            margin-bottom: 36px;
+            max-width: 780px;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            color: var(--accent);
+            margin-bottom: 10px;
+            background: var(--accent-soft);
+            padding: 5px 12px;
+            border-radius: 6px;
+        }
+
+        .section-title {
+            font-size: clamp(30px, 4.5vw, 44px);
+            margin-bottom: 14px;
+            color: var(--text-main);
+        }
+
+        .section-desc {
+            font-size: 17px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            padding: 36px 0 48px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5.5vw, 56px);
+            margin: 12px 0 18px;
+            color: var(--text-main);
+        }
+
+        .hero-sub {
+            font-size: clamp(17px, 2.2vw, 20px);
+            color: var(--text-muted);
+            max-width: 740px;
+            margin: 0 auto 22px;
+            line-height: 1.55;
+        }
+
+        /* Крупная плашка с ценой в первом экране */
+        .hero-price-pill {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px 16px;
+            background: var(--accent);
+            color: #fff;
+            padding: 14px 26px;
+            border-radius: 12px;
+            margin-bottom: 22px;
+            font-weight: 800;
+            font-size: clamp(18px, 3vw, 22px);
+            box-shadow: 0 6px 20px rgba(114, 38, 38, 0.22);
+        }
+
+        .hero-price-pill .sub-price {
+            font-size: 14.5px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.16);
+            padding: 5px 12px;
+            border-radius: 8px;
+            color: #FCFBF8;
+        }
+
+        /* Жесткое правило ("Крик души") в первом экране */
+        .hero-warning-box {
+            max-width: 720px;
+            margin: 0 auto 28px;
+            padding: 24px 28px;
+            background: #FDF6F6;
+            border: 2px solid var(--accent);
+            border-radius: 14px;
+            text-align: left;
+            color: var(--text-main);
+            box-shadow: 0 8px 24px rgba(114, 38, 38, 0.08);
+        }
+
+        .hero-warning-title {
+            display: block;
+            font-weight: 800;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .hero-warning-lead {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--text-main);
+            line-height: 1.45;
+            margin-bottom: 14px;
+        }
+
+        .hero-warning-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .hero-warning-list li {
+            position: relative;
+            padding-left: 22px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.55;
+            color: var(--text-main);
+        }
+
+        .hero-warning-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .hero-warning-list li::before {
+            content: "•";
+            position: absolute;
+            left: 4px;
+            top: 0;
+            color: var(--accent);
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        .investment-highlight {
+            background: var(--accent-soft);
+            color: var(--accent);
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-weight: 800;
+        }
+
+        /* Ссылки на внешние площадки отзывов */
+        .hero-reviews-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .hero-banner {
+            width: 100%;
+            max-width: 1020px;
+            margin: 0 auto;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            background-color: var(--bg-muted);
+        }
+
+        .hero-banner img {
+            width: 100%;
+            height: auto;
+            max-height: 440px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ЗАЩИТНАЯ ЗОНА ДЛЯ ПЕРВОЙ КНОПКИ TELEGRAM (после блока Об эксперте) */
+        .cta-safe-zone {
+            max-width: 680px;
+            margin: 56px auto 12px;
+            padding: 36px 28px;
+            background: var(--bg-card);
+            border: 2px solid var(--accent);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(114, 38, 38, 0.08);
+            text-align: center;
+        }
+
+        .cta-safe-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .cta-safe-sub {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+
+        .cta-safe-label {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 800;
+            color: var(--accent);
+            background: var(--accent-soft);
+            padding: 6px 14px;
+            border-radius: 8px;
+            margin-bottom: 18px;
+        }
+
+        .cta-safe-zone .btn {
+            width: 100%;
+            max-width: 420px;
+            font-size: 17px;
+            padding: 18px 28px;
+        }
+
+        /* Trust Strip (Tools & Unis) */
+        .trust-strip {
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 28px 0;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            align-items: center;
+        }
+
+        .trust-group-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .badge {
+            font-size: 14px;
+            font-weight: 600;
+            padding: 7px 13px;
+            border-radius: 8px;
+            background: var(--bg-main);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+
+        .badge.accent {
+            background: var(--accent-soft);
+            border-color: #dfc4c0;
+            color: var(--accent);
+        }
+
+        /* Block 1: Client POV Cards */
+        .pov-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .pov-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+        }
+
+        .pov-role {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            color: var(--accent);
+            margin-bottom: 14px;
+        }
+
+        .math-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 34px;
+            height: 34px;
+            padding: 0 8px;
+            border-radius: 8px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 19px;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1;
+            border: 1px solid #e2c8c5;
+        }
+
+        .pov-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-style: italic;
+            color: var(--text-main);
+            margin-bottom: 14px;
+            line-height: 1.3;
+            background: var(--bg-main);
+            padding: 14px 16px;
+            border-left: 3px solid var(--accent);
+            border-radius: 0 8px 8px 0;
+        }
+
+        .pov-card.not-for-me {
+            background: #F5EFEF;
+            border: 2px dashed var(--accent);
+        }
+
+        /* Block 2: Expert Bio */
+        .expert-layout {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .expert-photo-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .expert-photo-wrapper {
+            border-radius: 10px;
+            overflow: hidden;
+            background: var(--bg-muted);
+            aspect-ratio: 3 / 4;
+            margin-bottom: 16px;
+        }
+
+        .expert-photo-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .expert-quick-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .stat-box {
+            background: var(--bg-main);
+            padding: 12px 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .stat-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        .expert-bio h3 {
+            font-size: 34px;
+            margin-bottom: 14px;
+        }
+
+        .bio-highlights {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+            margin: 24px 0;
+        }
+
+        .bio-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 22px;
+        }
+
+        .bio-item strong {
+            display: block;
+            color: var(--accent);
+            margin-bottom: 6px;
+            font-size: 17px;
+        }
+
+        .books-box {
+            background: var(--bg-muted);
+            border-radius: 12px;
+            padding: 20px 22px;
+            margin-top: 20px;
+        }
+
+        .books-box h4 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 13.5px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .perks-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .perk-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 22px;
+            border-radius: 12px;
+        }
+
+        .perk-card h4 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 16.5px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+
+        .perk-card p {
+            font-size: 15.5px;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        /* Block 3: Philosophy & What We Do (Dark Section) */
+        .dark-section {
+            background-color: var(--bg-dark);
+            color: #F6F3EC;
+            border-bottom: none;
+        }
+
+        .dark-section .section-title {
+            color: #F6F3EC;
+        }
+
+        .dark-section .section-desc {
+            color: #B5AFA2;
+        }
+
+        .dark-section .section-tag {
+            background: rgba(114, 38, 38, 0.45);
+            color: #E8B4B0;
+        }
+
+        .philosophy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .pain-box {
+            background: var(--bg-dark-card);
+            border: 1px solid #38352E;
+            border-radius: var(--radius);
+            padding: 28px;
+        }
+
+        .pain-box h3 {
+            font-size: 28px;
+            margin-bottom: 14px;
+            color: #E8B4B0;
+        }
+
+        .pain-box p {
+            color: #C7C1B4;
+            font-size: 16.5px;
+            margin-bottom: 14px;
+        }
+
+        .bad-strategies {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .bad-item {
+            background: rgba(255, 255, 255, 0.04);
+            border-left: 3px solid #A64444;
+            padding: 14px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 16px;
+            color: #DCD6C8;
+        }
+
+        .bad-item strong {
+            color: #fff;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 16.5px;
+        }
+
+        .goals-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .goal-card {
+            background: var(--bg-dark-card);
+            border: 1px solid #38352E;
+            border-radius: var(--radius);
+            padding: 24px;
+        }
+
+        .goal-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            color: #F6F3EC;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .goal-num {
+            font-family: 'Manrope', sans-serif;
+            font-size: 13px;
+            font-weight: 800;
+            background: var(--accent);
+            color: #fff;
+            padding: 4px 9px;
+            border-radius: 6px;
+        }
+
+        .goal-card p {
+            color: #B5AFA2;
+            font-size: 16px;
+            line-height: 1.55;
+        }
+
+        .formats-title {
+            font-size: 30px;
+            margin-bottom: 22px;
+            color: #F6F3EC;
+        }
+
+        .formats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .format-item {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid #38352E;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .format-item h4 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .format-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            background: rgba(232, 180, 176, 0.15);
+            color: #E8B4B0;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 16px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .format-item p {
+            font-size: 16px;
+            color: #B5AFA2;
+            line-height: 1.55;
+        }
+
+        /* Process Strip */
+        .process-strip {
+            margin-top: 40px;
+            padding-top: 32px;
+            border-top: 1px solid #38352E;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .step-item {
+            position: relative;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #38352E;
+        }
+
+        .step-num {
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #E8B4B0;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .step-item h5 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .step-item p {
+            font-size: 15.5px;
+            color: #A39D90;
+            line-height: 1.5;
+        }
+
+        /* Block 4: Courses & Syllabi */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 22px;
+        }
+
+        .course-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+        }
+
+        .course-cat {
+            font-size: 12.5px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .course-card h3 {
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        .course-summary {
+            font-size: 16px;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+            line-height: 1.55;
+        }
+
+        details.syllabus {
+            border-top: 1px solid var(--border);
+            padding-top: 14px;
+            margin-top: auto;
+        }
+
+        details.syllabus summary {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--accent);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 0;
+        }
+
+        details.syllabus summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.syllabus summary::after {
+            content: "+ Развернуть темы";
+            font-size: 13px;
+            background: var(--accent-soft);
+            padding: 5px 10px;
+            border-radius: 6px;
+        }
+
+        details.syllabus[open] summary::after {
+            content: "− Свернуть";
+        }
+
+        .syllabus-content {
+            margin-top: 14px;
+            font-size: 15px;
+            color: var(--text-main);
+            background: var(--bg-main);
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .syllabus-content ul {
+            padding-left: 18px;
+        }
+
+        .syllabus-content li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .ml-bar {
+            margin-top: 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 26px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Block 5: Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-bottom: 28px;
+        }
+
+        .review-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+        }
+
+        .review-tag {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--accent);
+            background: var(--accent-soft);
+            padding: 5px 11px;
+            border-radius: 6px;
+            margin-bottom: 14px;
+        }
+
+        .review-text {
+            font-size: 16px;
+            color: var(--text-main);
+            margin-bottom: 18px;
+            line-height: 1.6;
+        }
+
+        .review-author {
+            border-top: 1px solid var(--border);
+            padding-top: 12px;
+            font-size: 14px;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .external-reviews-bar {
+            background: var(--bg-muted);
+            border-radius: var(--radius);
+            padding: 24px 28px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .ext-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* Block 6: Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .price-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 30px 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+        }
+
+        .price-card.featured {
+            border: 2px solid var(--accent);
+            position: relative;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            right: 22px;
+            background: var(--accent);
+            color: #fff;
+            font-size: 11.5px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 12px;
+            border-radius: 6px;
+        }
+
+        .price-title {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        .price-sub {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 18px;
+        }
+
+        .price-amount {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 46px;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .price-amount span {
+            font-family: 'Manrope', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .price-desc {
+            font-size: 16px;
+            color: var(--text-main);
+            margin: 16px 0 0;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            line-height: 1.55;
+        }
+
+        /* Block 7: FAQ & Final CTA */
+        .faq-list {
+            max-width: 820px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        details.faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px 24px;
+        }
+
+        details.faq-item summary {
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 14px;
+            line-height: 1.4;
+        }
+
+        details.faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details.faq-item summary::after {
+            content: "+";
+            font-size: 24px;
+            color: var(--accent);
+            font-weight: 500;
+            flex-shrink: 0;
+        }
+
+        details.faq-item[open] summary::after {
+            content: "−";
+        }
+
+        details.faq-item p {
+            margin-top: 14px;
+            font-size: 16.5px;
+            color: var(--text-muted);
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+            line-height: 1.6;
+        }
+
+        /* ВТОРАЯ И ПОСЛЕДНЯЯ КНОПКА TELEGRAM В САМОМ КОНЦЕ */
+        .final-cta-card {
+            max-width: 680px;
+            margin: 48px auto 16px;
+            padding: 40px 32px;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 12px 34px rgba(114, 38, 38, 0.25);
+        }
+
+        .final-cta-card h3 {
+            font-size: clamp(28px, 4vw, 36px);
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .final-cta-card p {
+            color: #F3E8E6;
+            margin-bottom: 18px;
+            font-size: 17px;
+            line-height: 1.55;
+        }
+
+        .final-price-reminder {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.22);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 15.5px;
+            margin-bottom: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Защитная зона вокруг финальной кнопки от случайных тапов */
+        .final-btn-zone {
+            padding: 12px 0;
+        }
+
+        .final-btn-zone .btn-white {
+            width: 100%;
+            max-width: 400px;
+            font-size: 17px;
+            padding: 18px 28px;
+        }
+
+        .secondary-contacts {
+            margin-top: 26px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.18);
+            font-size: 14.5px;
+            color: #F3E8E6;
+        }
+
+        .secondary-contacts a {
+            text-decoration: underline;
+            font-weight: 700;
+            margin: 0 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-dark);
+            color: #9E988B;
+            padding: 44px 0 36px;
+            font-size: 15px;
+        }
+
+        .footer-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .seo-footer-text {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid #2E2C27;
+            font-size: 13px;
+            color: #6E6A61;
+            line-height: 1.6;
+        }
+
+        /* Responsive Mobile-First Adjustments */
+        @media (max-width: 980px) {
+            .expert-layout {
+                grid-template-columns: 1fr;
+            }
+            .expert-photo-card {
+                max-width: 360px;
+                margin: 0 auto;
+            }
+            .perks-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .philosophy-grid,
+            .pricing-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            .process-strip {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            section {
+                padding: 48px 0;
+            }
+            .brand span {
+                display: none;
+            }
+            .hero {
+                padding: 24px 0 36px;
+            }
+            .hero-price-pill {
+                width: 100%;
+                padding: 14px 16px;
+                font-size: 19px;
+            }
+            .hero-warning-box {
+                padding: 20px 18px;
+            }
+            .hero-warning-lead {
+                font-size: 17px;
+            }
+            /* Защитный отступ для кнопки Telegram на мобильных */
+            .cta-safe-zone {
+                margin: 44px 4px 8px;
+                padding: 28px 20px;
+            }
+            .trust-grid,
+            .formats-grid,
+            .perks-grid,
+            .process-strip,
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+            .pov-card, .course-card, .review-card, .price-card, .pain-box, .goal-card {
+                padding: 22px 20px;
+            }
+            .final-cta-card {
+                margin: 40px 4px 12px;
+                padding: 32px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <!-- НАВИГАЦИЯ -->
-  <header>
-    <div class="container nav-wrap">
-      <a href="#" class="brand">ANDREY <span>STAT LAB</span></a>
-      <nav class="nav-links">
-        <a href="#client">Кому пригодится</a>
-        <a href="#expert">Об эксперте</a>
-        <a href="#what-we-do">Подход</a>
-        <a href="#courses">Обучение</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#pricing">Цены</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <div class="header-contacts">
-        <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ВК И MAX -->
-        <a href="http://vk.com/aglady" target="_blank" class="btn btn-soft btn-sm">ВК</a>
-        <a href="https://max.ru/u/f9LHodD0cOJ77Nlr9GODmKtq-t-IbRnqo2VT8OGLGlqiQ3r0kFTW__Do8PE" target="_blank" class="btn btn-soft btn-sm">MAX</a>
-        <a href="https://t.me/andrey_stat_lab" target="_blank" class="btn btn-primary btn-sm">Telegram</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- 1. ГЛАВНЫЙ ЭКРАН -->
-  <section class="hero">
-    <div class="container">
-      <span class="hero-tag">ANDREY STAT LAB • Количественный анализ и исследования</span>
-      <h1>Наука и высшая школа: учимся считать и читать то, что посчитали</h1>
-      <p class="hero-sub">
-        Ваш частный <strong>репетитор, ментор и проводник</strong> в мире анализа данных. Индивидуальные и групповые занятия онлайн по эконометрике, математической статистике, теории вероятностей и биостатистике.
-      </p>
-      <div class="hero-quote">
-        «Не решаю за вас — учу понимать. Для тех, кому нужно научиться решать задачи, сдать сложный экзамен или защитить исследование без паники и стыда перед комиссией».
-      </div>
-
-      <!-- КНОПКИ СВЯЗИ НА ПЕРВОМ ЭКРАНЕ -->
-      <div class="hero-actions">
-        <a href="https://t.me/andrey_stat_lab" target="_blank" class="btn btn-primary">Написать в Telegram</a>
-        <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ВК И MAX -->
-        <a href="http://vk.com/aglady" target="_blank" class="btn btn-outline">Написать в ВК</a>
-        <a href="https://max.ru/u/f9LHodD0cOJ77Nlr9GODmKtq-t-IbRnqo2VT8OGLGlqiQ3r0kFTW__Do8PE" target="_blank" class="btn btn-outline">Написать в MAX</a>
-        <a href="#courses" class="btn btn-soft">Программы обучения ↓</a>
-      </div>
-
-      <!-- БЫСТРЫЕ ССЫЛКИ НА ОТЗЫВЫ (ПРОФИ, АВИТО, ТГ) -->
-      <div class="hero-platforms-bar">
-        <span>Независимые анкеты и отзывы:</span>
-        <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ПРОФИ И АВИТО -->
-        <a href="https://profi.ru/profile/GladiyAV/" target="_blank" class="platform-link"><span class="platform-star">★</span> Отзывы на Профи.ру</a>
-        <a href="https://www.avito.ru/brands/cc0873923316e471b132917fe8594988" target="_blank" class="platform-link"><span class="platform-star">★</span> Отзывы на Авито</a>
-        <a href="https://t.me/andrey_stat_lab" target="_blank" class="platform-link">#отзывы в Telegram</a>
-      </div>
-
-      <!-- ГОРИЗОНТАЛЬНЫЙ ФОТО-БАННЕР С ТЕГОМ IMG И SEO-ALT -->
-      <div class="hero-banner">
-        <img src="banner.jpg" alt="Репетитор по эконометрике, статистике и теории вероятностей онлайн — Андрей, ANDREY STAT LAB" class="hero-banner-img" onerror="this.style.display='none'">
-        <div class="hero-banner-overlay">
-          <h2>Гладий Андрей • Магистр Machine Learning НИУ ВШЭ (с отличием)</h2>
-          <p>
-            Эконометрика • Математическая статистика • Теория вероятностей • Биостатистика • Анализ опросов и экспериментов<br>
-            <strong>SPSS • Jamovi • Stata • R / RStudio • Python • Gretl • EViews • MS Excel</strong>
-          </p>
+    <!-- Навигация (Кнопка ведет на блок с ценами, чтобы исключить случайные клики по Telegram в шапке) -->
+    <header>
+        <div class="container nav-bar">
+            <a href="#" class="brand">
+                ANDREY STAT LAB
+                <span>Магистр НИУ ВШЭ</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#client">Кому подойдет</a>
+                <a href="#expert">Об эксперте</a>
+                <a href="#what-we-do">Формат</a>
+                <a href="#courses">Дисциплины</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#pricing">Тарифы</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#pricing" class="btn btn-soft btn-sm">Цены: 3 000 ₽/ч ↓</a>
         </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- ЛЕНТА ПАКЕТОВ И ВУЗОВ -->
-  <div class="trust-strip">
-    <div class="container trust-strip-inner">
-      <div class="trust-group">
-        <span class="trust-label">Пакеты и языки:</span>
-        <span class="tool-pill">SPSS</span>
-        <span class="tool-pill">Jamovi</span>
-        <span class="tool-pill">Stata</span>
-        <span class="tool-pill">R / RStudio</span>
-        <span class="tool-pill">Python</span>
-        <span class="tool-pill">Gretl</span>
-        <span class="tool-pill">EViews</span>
-        <span class="tool-pill">MS Excel</span>
-      </div>
-      <div class="trust-group">
-        <span class="trust-label">Курсы вузов:</span>
-        <span class="uni-pill">НИУ ВШЭ</span>
-        <span class="uni-pill">МГУ</span>
-        <span class="uni-pill">МГИМО</span>
-        <span class="uni-pill">СПбГУ</span>
-        <span class="uni-pill">ФинУнивер</span>
-        <span class="uni-pill">РАНХиГС</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 2. КОМУ ПРИГОДИТСЯ (POV) -->
-  <section id="client">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Узнайте себя</span>
-        <h2 class="section-title">Кому пригодится работа со мной</h2>
-        <p class="section-desc">Типичные ситуации, с которыми ко мне обращаются студенты, аспиранты и научные сотрудники.</p>
-      </div>
-
-      <div class="pov-grid">
-        <div class="pov-card">
-          <div>
-            <div class="pov-top">
-              <span class="pov-badge">POV: Экономист / Финансист</span>
-              <span class="pov-symbol">∑</span>
-            </div>
-            <p class="pov-quote">«На лекциях всё вроде понятно, но открываю задачник Демешева, Магнуса, Картаева или Вулдриджа — и ступор. Не умею доказывать теоремы и проверять свойства оценок, а экзамен близко».</p>
-          </div>
-          <p class="pov-answer">Научимся видеть структуру задачи, разбирать доказательства без зубрёжки и решать билеты в обозначениях вашего лектора.</p>
-        </div>
-
-        <div class="pov-card">
-          <div>
-            <div class="pov-top">
-              <span class="pov-badge">POV: Социолог / Психолог</span>
-              <span class="pov-symbol">α</span>
-            </div>
-            <p class="pov-quote">«Мне нужно сдать анализ данных или посчитать эмпирику для диплома, но меня напрягают кнопочки в SPSS и Jamovi, таблицы нагоняют тоску, и вообще — я гуманитарий!»</p>
-          </div>
-          <p class="pov-answer">Спокойно и без формул ради формул разберёмся, куда нажимать и как перевести статистические таблицы на понятный русский язык.</p>
-        </div>
-
-        <div class="pov-card">
-          <div>
-            <div class="pov-top">
-              <span class="pov-badge">POV: Врач / Биолог / Аспирант</span>
-              <span class="pov-symbol">χ²</span>
-            </div>
-            <p class="pov-quote">«Пишу диссертацию или статью: база пациентов собрана, но я не знаю, каким критерием её правильно обсчитать, чтобы научрук и комиссия не завернули работу».</p>
-          </div>
-          <p class="pov-answer">Подберём корректные параметрические и непараметрические критерии, ROC-анализ или анализ выживаемости и подготовимся к вопросам защиты.</p>
-        </div>
-
-        <div class="pov-card">
-          <div>
-            <div class="pov-top">
-              <span class="pov-badge">POV: Продвинутый курс</span>
-              <span class="pov-symbol">β̂<sub>IV</sub></span>
-            </div>
-            <p class="pov-quote">«Базу я знаю, но застрял на тяжёлой артиллерии: эндогенность, 2SLS, панельные данные, временные ряды, GARCH, коинтеграция или пространственные модели».</p>
-          </div>
-          <p class="pov-answer">Сразу пойдём в глубину: разберём спецификацию, диагностические тесты, робастные ошибки и эконометрическую логику без воды.</p>
-        </div>
-
-        <div class="pov-card">
-          <div>
-            <div class="pov-top">
-              <span class="pov-badge">POV: Обучение на английском</span>
-              <span class="pov-symbol">EN</span>
-            </div>
-            <p class="pov-quote">«Я учусь на англоязычной программе (МИЭФ ВШЭ или зарубежный университет). Все силлабусы, учебники и задания на английском — переводить их нет времени».</p>
-          </div>
-          <p class="pov-answer">Свободно владею английским и провожу занятия полностью на нём — разбираем ваши материалы в оригинале.</p>
-        </div>
-
-        <!-- ЗАЧЁРКНУТАЯ КАРТОЧКА -->
-        <div class="pov-card crossed">
-          <div>
-            <div class="pov-top">
-              <span class="pov-badge">Не ко мне</span>
-              <span class="pov-symbol">✕</span>
-            </div>
-            <p class="pov-quote">«А можно я просто скину файл, ничего понимать не буду, а вы за меня всё молча решите к утру или посидите со мной в микронаушнике?»</p>
-          </div>
-          <p class="pov-answer">✗ Нет. Работу вместо вас я не делаю и на экзаменах с микронаушником не сижу. Моя задача — чтобы знания остались в вашей голове.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. АВТОР ПРОЕКТА / ЭКСПЕРТ (РАСШИРЕННЫЙ БЛОК О ВАС + ВСЕ ССЫЛКИ) -->
-  <section id="expert">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Кто ведёт занятия</span>
-        <h2 class="section-title">Об авторе и преимуществах</h2>
-      </div>
-
-      <div class="expert-custom-grid">
-        <!-- ЛЕВАЯ КОЛОНКА: ФОТО 5:6 + ЦИФРЫ + ПРЯМАЯ СВЯЗЬ И АНКЕТЫ -->
-        <div class="expert-bio expert-photo-card">
-          <div class="expert-photo-box">
-            <img src="photo.jpg" alt="Гладий Андрей Васильевич — репетитор по эконометрике и статистике, магистр машинного обучения НИУ ВШЭ">
-          </div>
-
-          <div class="stats-row">
-            <div>
-              <span class="stat-num">5+ лет</span>
-              <span class="stat-label">опыта</span>
-            </div>
-            <div>
-              <span class="stat-num">250+</span>
-              <span class="stat-label">учеников</span>
-            </div>
-            <div>
-              <span class="stat-num">RU / EN</span>
-              <span class="stat-label">языки</span>
-            </div>
-          </div>
-
-          <!-- БЛОК СВЯЗИ И ПРОВЕРКИ ОТЗЫВОВ ПРЯМО ПОД ФОТО -->
-          <div class="expert-direct-links">
-            <span class="expert-direct-label">Написать мне напрямую:</span>
-            <div class="messenger-grid-3">
-              <a href="https://t.me/andrey_stat_lab" target="_blank" class="mini-contact-btn primary-tg">Telegram</a>
-              <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ВК И MAX -->
-              <a href="http://vk.com/aglady" target="_blank" class="mini-contact-btn">ВКонтакте</a>
-              <a href="https://max.ru/u/f9LHodD0cOJ77Nlr9GODmKtq-t-IbRnqo2VT8OGLGlqiQ3r0kFTW__Do8PE" target="_blank" class="mini-contact-btn">MAX</a>
-            </div>
-
-            <span class="expert-direct-label" style="margin-top: 8px;">Проверить отзывы на площадках:</span>
-            <div class="profile-grid-2">
-              <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ПРОФИ И АВИТО -->
-              <a href="https://profi.ru/profile/GladiyAV/" target="_blank" class="mini-contact-btn">★ Профи.ру</a>
-              <a href="https://www.avito.ru/brands/cc0873923316e471b132917fe8594988" target="_blank" class="mini-contact-btn">★ Авито</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ПРАВАЯ КОЛОНКА: ПОДРОБНО О ВАС + 4 КАРТОЧКИ 2x2 -->
-        <div style="display: flex; flex-direction: column; gap: 20px;">
-          <div class="expert-bio">
-            <h3>Гладий Андрей Васильевич</h3>
-            <div class="expert-creds">Количественный исследователь • Частный преподаватель и ментор • Магистр машинного обучения НИУ ВШЭ (диплом с отличием)</div>
-            
-            <p style="margin-bottom: 12px;">
-              Более 5 лет я преподаю эконометрику, математическую статистику, теорию вероятностей и прикладной анализ данных. За это время через индивидуальные занятия и мини-группы прошли более 250 студентов бакалавриата и магистратуры, аспирантов, врачей и научных сотрудников.
-            </p>
-            <p>
-              Я одинаково свободно работаю в двух режимах: могу разбирать строгую матаналитическую и матричную базу для сложных экзаменов экономических факультетов — и в то же время умею объяснять прикладную статистику «на пальцах» психологам, социологам и медикам без перегруза формулами.
-            </p>
-
-            <!-- 3 КЛЮЧЕВЫЕ ВЕХИ БИОГРАФИИ -->
-            <div class="bio-highlights">
-              <div class="bio-hl-item">
-                <strong>Академическая база</strong>
-                <span>Окончил магистратуру НИУ ВШЭ по направлению Machine Learning с красным дипломом. Глубоко знаю математический фундамент моделей.</span>
-              </div>
-              <div class="bio-hl-item">
-                <strong>Исследовательский опыт</strong>
-                <span>Работаю с реальными клиническими, опросными и макроэкономическими данными — знаю, чего требуют научруки и рецензенты.</span>
-              </div>
-              <div class="bio-hl-item">
-                <strong>Педагогический подход</strong>
-                <span>Спокойная, уважительная атмосфера без снобизма: любой вопрос уместен, разбираем до тех пор, пока не сложится полная картина.</span>
-              </div>
-            </div>
-
-            <div class="books-shelf">
-              <span class="books-shelf-title">Учебники и задачники, в логике которых я работаю:</span>
-              <div class="book-tags">
-                <span class="book-tag">Магнус, Катышев, Пересецкий</span>
-                <span class="book-tag">Борзых, Демешев</span>
-                <span class="book-tag">Картаев</span>
-                <span class="book-tag">Елисеева</span>
-                <span class="book-tag">Wooldridge</span>
-                <span class="book-tag">Stock &amp; Watson</span>
-                <span class="book-tag">Gujarati</span>
-                <span class="book-tag">Greene</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="expert-perks-grid">
-            <div class="perk-card">
-              <h4>Живой диалог и решение задач</h4>
-              <p>Занятие устроено как разговор и совместное рассуждение, а не молчаливый кодинг. После урока вы можете воспроизвести и объяснить всю логику самостоятельно.</p>
-            </div>
-            <div class="perk-card">
-              <h4>Авторские презентации</h4>
-              <p>Никаких каракулей на онлайн-доске: готовлю собственные структурные презентации, по которым приятно учиться и повторять материал перед экзаменом.</p>
-            </div>
-            <div class="perk-card">
-              <h4>Опыт с НИУ ВШЭ и ведущими вузами</h4>
-              <p>Обучил студентов большинства программ Вышки (ФЭН, МИЭФ, МЭ, ВШБ, Социология, Психология, Политология), МГУ, СПБГУ, МГИМО, Финансового университета и РАНХиГС.</p>
-            </div>
-            <div class="perk-card">
-              <h4>Преподавание на английском</h4>
-              <p>Для студентов англоязычных программ и зарубежных вузов провожу занятия полностью на английском языке без потери времени на перевод терминов.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. ЧТО МЫ ДЕЛАЕМ (КОНТРАСТНЫЙ ТЁМНЫЙ РАЗДЕЛ + ДОРОЖНАЯ КАРТА РАБОТЫ) -->
-  <section id="what-we-do" class="dark-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Подход к работе</span>
-        <h2 class="section-title">Что мы делаем и какие задачи закрываем</h2>
-      </div>
-
-      <div class="two-col">
-        <div class="pain-box">
-          <p>
-            <strong style="color: #FFF;">Университетское преподавание количественных методов часто устроено через боль.</strong> На лекциях вам могут полгода доказывать абстрактные теоремы, а на экзамене внезапно потребовать решить нестандартную задачу, вывести матричные формулы на доске или выдать распечатку из статистического пакета на десять страниц со словами: <em>«Сделайте содержательный вывод»</em>.
-          </p>
-          <p>
-            В этот момент обычно выбирают одну из двух провальных стратегий:
-          </p>
-          <ul class="bad-strategies">
-            <li><strong>Зубрить всё подряд без сна.</strong> Итог — каша в голове, паника на экзамене и потеря баллов, потому что важно не только заучить формулы, но и понимать суть.</li>
-            <li><strong>Заказать готовую работу на бирже.</strong> Итог — знаний в голове не прибавляется ни на йоту, а вас разносят за две минуты на первом же дополнительном вопросе.</li>
-          </ul>
-          <p style="margin-bottom: 0;">
-            <strong style="color: #FFF;">Я предлагаю другой путь.</strong> Как преподаватель и репетитор я работаю со взрослыми людьми на равных: в формате живого разговора и совместного разбора задач по наглядным авторским презентациям.
-          </p>
-        </div>
-
-        <div class="goals-stack">
-          <div class="goal-card">
-            <h4>1. Учебные цели (вузовские курсы, контрольные, экзамены)</h4>
-            <p>Учимся решать задачи, доказывать теоремы и понимать логику предмета. Подготовка к коллоквиумам и сессии по программам НИУ ВШЭ, МГУ, МГИМО, Финансового университета, РАНХиГС, СПбГУ и зарубежных вузов.</p>
-          </div>
-          <div class="goal-card">
-            <h4>2. Академические и научные цели (ВКР, диссертации, статьи)</h4>
-            <p>Совместная разработка методологии и расчётных глав для дипломов, магистерских и кандидатских диссертаций. От подбора статистического критерия до уверенных ответов на вопросы рецензентов.</p>
-          </div>
-          <div class="goal-card">
-            <h4>3. Карьерные и исследовательские задачи</h4>
-            <p>Освоение прикладной статистики, эконометрического моделирования и машинного обучения для аналитиков, врачей, социологов и психологов, работающих с реальными данными.</p>
-          </div>
-        </div>
-      </div>
-
-      <h3 style="font-size: 28px; margin-bottom: 12px; color: #FFF;">Работаем строго под ваш формат и требования преподавателя</h3>
-      <div class="format-grid">
-        <div class="format-item">
-          <span class="roman-num">I</span>
-          <div>
-            <h4>Попали к теоретику, требующему вывода формул и строгих доказательств?</h4>
-            <p>Разложим математику по полочкам: пошаговый вывод теоремы Гаусса — Маркова, МНК (OLS), метод максимального правдоподобия (MLE), проверка несмещённости и состоятельности оценок руками.</p>
-          </div>
-        </div>
-        <div class="format-item">
-          <span class="roman-num">II</span>
-          <div>
-            <h4>Требуют объяснить каждую цифру в выдаче SPSS, Jamovi, Stata или Gretl?</h4>
-            <p>Разберём таблицы вывода до косточек: отсечём служебный мусор и вытащим содержательный смысл каждого F-критерия, степеней свободы (df), p-value и величины эффекта.</p>
-          </div>
-        </div>
-        <div class="format-item">
-          <span class="roman-num">III</span>
-          <div>
-            <h4>Научрук вернул главу со словами «Переделать всё»?</h4>
-            <p>Вскроем проблему: почему не сошлись тесты, как научно обосновать выбор модели или непараметрического критерия и как грамотно описать ограничения выборки.</p>
-          </div>
-        </div>
-        <div class="format-item">
-          <span class="roman-num">IV</span>
-          <div>
-            <h4>Задали расчётную работу в R / RStudio или Python?</h4>
-            <p>Наведём порядок в логике исследования, моделях, статистических тестах и визуализации графиков так, чтобы вы ориентировались в каждом шаге.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ГОРИЗОНТАЛЬНАЯ СХЕМА ПРОЦЕССА -->
-      <div class="process-strip">
-        <span class="section-label">Прозрачный маршрут</span>
-        <h3 style="font-size: 28px; color: #FFF;">Как строится работа от первого сообщения до результата</h3>
-        <div class="process-grid">
-          <div class="process-step">
-            <span class="process-step-num">Шаг 01</span>
-            <h5>Знакомство с задачей</h5>
-            <p>Пишете мне в Telegram, ВК или MAX и присылаете силлабус, примеры билетов или базу данных для ВКР.</p>
-          </div>
-          <div class="process-step">
-            <span class="process-step-num">Шаг 02</span>
-            <h5>План и оценка объёма</h5>
-            <p>Честно говорю, сколько встреч понадобится, и подбираю материалы строго под нотацию вашего курса.</p>
-          </div>
-          <div class="process-step">
-            <span class="process-step-num">Шаг 03</span>
-            <h5>Живые занятия</h5>
-            <p>Разбираем теорию, решаем задачи руками или считаем модели в SPSS, Jamovi, Stata, R или Python.</p>
-          </div>
-          <div class="process-step">
-            <span class="process-step-num">Шаг 04</span>
-            <h5>Уверенная сдача</h5>
-            <p>У вас остаются все презентации, расчёты и главное — полное понимание каждого вывода на защите.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. ГЛАВНЫЙ РАЗДЕЛ: ОБУЧЕНИЕ (ТАБЛИЦА В 3 КОЛОНКИ) -->
-  <section id="courses">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Учебная и научная база</span>
-        <h2 class="section-title">Дисциплины и программы обучения</h2>
-        <p class="section-desc">Работаю от самой базы до продвинутых тем. Нажмите «+ Развернуть темы» внутри любого блока, чтобы увидеть полный перечень разделов.</p>
-      </div>
-
-      <div class="courses-grid">
-        <!-- БЛОК 1 -->
-        <div class="course-card">
-          <div class="course-watermark">P(A|B)</div>
-          <span class="course-num">Блок 01</span>
-          <h3 class="course-title">Теория вероятностей</h3>
-          <div class="course-tagline">«От базовых задач с шариками в урне до характеристических функций и формулы свёртки»</div>
-          <ul class="course-summary-points">
-            <li>Комбинаторика, условная вероятность и формула Байеса</li>
-            <li>Дискретные и непрерывные случайные величины и векторы</li>
-            <li>Закон больших чисел (ЗБЧ) и Центральная предельная теорема (ЦПТ)</li>
-          </ul>
-          <details class="syllabus">
-            <summary>Полная программа</summary>
-            <div class="syllabus-content">
-              <p><strong>Элементарная и аналитическая вероятность:</strong> классическое, геометрическое и статистическое определения, сочетания, размещения, перестановки, условная вероятность, независимость событий, формула полной вероятности и Байеса.</p>
-              <p><strong>Случайные величины:</strong> PMF, PDF, CDF, квантили. Матожидание, дисперсия, моменты высших порядков, асимметрия (skewness), эксцесс (kurtosis). Формула свёртки.</p>
-              <p><strong>Распределения:</strong> биномиальное, геометрическое, гипергеометрическое, Пуассона, нормальное, логнормальное, экспоненциальное, равномерное, Стьюдента (t), хи-квадрат (χ²), Фишера (F).</p>
-              <p><strong>Многомерные величины и асимптотика:</strong> совместное, маргинальное и условное распределения, ковариация, корреляция Пирсона, условное матожидание; неравенства Маркова и Чебышева, ЗБЧ, ЦПТ, дельта-метод.</p>
-            </div>
-          </details>
-        </div>
-
-        <!-- БЛОК 2 -->
-        <div class="course-card">
-          <div class="course-watermark">L(θ)</div>
-          <span class="course-num">Блок 02</span>
-          <h3 class="course-title">Математическая статистика</h3>
-          <div class="course-tagline">«От выборочного среднего до метода максимального правдоподобия и леммы Неймана — Пирсона»</div>
-          <ul class="course-summary-points">
-            <li>Проверка несмещённости, состоятельности и эффективности оценок</li>
-            <li>Метод моментов (MoM) и максимального правдоподобия (MLE)</li>
-            <li>Доверительные интервалы и аналитическая проверка гипотез</li>
-          </ul>
-          <details class="syllabus">
-            <summary>Полная программа</summary>
-            <div class="syllabus-content">
-              <p><strong>Теория оценивания:</strong> выборочные статистики, свойства точечных оценок (несмещённость, состоятельность, эффективность, асимптотическая нормальность). Метод моментов (MoM), метод максимального правдоподобия (MLE, лог-функция и уравнения правдоподобия). Информация Фишера, неравенство Рао — Крамера, эффективные оценки.</p>
-              <p><strong>Интервальное оценивание:</strong> точные доверительные интервалы для среднего и дисперсии нормального распределения, асимптотические доверительные интервалы через ЦПТ и дельта-метод.</p>
-              <p><strong>Проверка статистических гипотез:</strong> простые и сложные гипотезы, ошибки I (α) и II (β) рода, мощность критерия (1−β), p-value. Лемма Неймана — Пирсона, критерий отношения правдоподобия (LRT), тесты Вальда (Wald) и множителей Лагранжа (LM / Score test).</p>
-            </div>
-          </details>
-        </div>
-
-        <!-- БЛОК 3 -->
-        <div class="course-card">
-          <div class="course-watermark">β̂<sub>OLS</sub></div>
-          <span class="course-num">Блок 03</span>
-          <h3 class="course-title">Эконометрика (базовый уровень)</h3>
-          <div class="course-tagline">«От парной регрессии и теоремы Гаусса — Маркова до гетероскедастичности и дамми-переменных»</div>
-          <ul class="course-summary-points">
-            <li>МНК (OLS) в скалярном и матричном виде, свойства оценок</li>
-            <li>Спецификация модели, эластичности, дамми и взаимодействия</li>
-            <li>Диагностика: мультиколлинеарность, гетероскедастичность, автокорреляция</li>
-          </ul>
-          <details class="syllabus">
-            <summary>Полная программа</summary>
-            <div class="syllabus-content">
-              <p><strong>Классический регрессионный анализ (OLS / МНК):</strong> множественная линейная регрессия, условия теоремы Гаусса — Маркова, смещение из-за пропущенных переменных (OVB), логарифмические модели (лог-лог, лог-лин, лин-лог), расчёт эластичностей, дамми-переменные, перекрёстные эффекты (interaction terms), квадратичные спецификации.</p>
-              <p><strong>Диагностика предпосылок:</strong> мультиколлинеарность и VIF, тест Рамсея (RESET), гетероскедастичность (тесты Уайта, Бройша — Пагана, Голдфелда — Квандта), автокорреляция остатков (Дарбина — Уотсона, Бройша — Годфри), робастные ошибки Уайта (HC0–HC3) и Ньюи — Веста (HAC).</p>
-            </div>
-          </details>
-        </div>
-
-        <!-- БЛОК 4 -->
-        <div class="course-card">
-          <div class="course-watermark">GARCH</div>
-          <span class="course-num">Блок 04</span>
-          <h3 class="course-title">Эконометрика (продвинутый уровень)</h3>
-          <div class="course-tagline">«От проблемы эндогенности и панельных данных до GARCH-моделей и пространственной эконометрики»</div>
-          <ul class="course-summary-points">
-            <li>Эндогенность, инструментальные переменные и 2SLS</li>
-            <li>Панельные данные (FE, RE) и модели выбора (Logit, Probit, Tobit)</li>
-            <li>Временные ряды (ARIMA, VAR/SVAR, VECM, GARCH) и коинтеграция</li>
-          </ul>
-          <details class="syllabus">
-            <summary>Полная программа</summary>
-            <div class="syllabus-content">
-              <p><strong>Эндогенность и ИП:</strong> двухшаговый МНК (2SLS / IV), тест Хаусмана, тест Саргана — Хансена на сверхидентифицируемость, слабые инструменты.</p>
-              <p><strong>Панельные данные:</strong> Pooled OLS, Fixed Effects (Within), Random Effects, Between, первые разности, Two-way FE. Тесты Хаусмана, Бройша — Пагана, Вулдриджа, Песарана (CD), кластеризованные ошибки и ошибки Дрисколла — Края, динамические панели.</p>
-              <p><strong>Качественные зависимые переменные:</strong> LPM, Logit, Probit, отношение шансов (Odds Ratio), предельные эффекты (MEM / AME), мультиномиальный и упорядоченный логит, Tobit, модель Хекмана.</p>
-              <p><strong>Временные ряды и пространственные модели:</strong> стационарность, ACF/PACF, тесты на единичные корни (ADF, KPSS, Филлипса — Перрона), ARIMA/SARIMA, VAR/SVAR, коинтеграция Энгла — Грейнджера и Йохансена, VECM, волатильность ARCH/GARCH, пространственная эконометрика.</p>
-            </div>
-          </details>
-        </div>
-
-        <!-- БЛОК 5 -->
-        <div class="course-card">
-          <div class="course-watermark">ANOVA</div>
-          <span class="course-num">Блок 05</span>
-          <h3 class="course-title">Адаптированные курсы для гуманитариев</h3>
-          <div class="course-tagline">«От страха перед кнопками в SPSS и Jamovi до понимания каждой цифры в своём дипломе»</div>
-          <ul class="course-summary-points">
-            <li>Для психологов, социологов, политологов, лингвистов и менеджеров</li>
-            <li>Обработка опросов, сравнение групп, ANOVA и корреляции</li>
-            <li>Психометрика, факторный (EFA/PCA) и кластерный анализ</li>
-          </ul>
-          <details class="syllabus">
-            <summary>Полная программа</summary>
-            <div class="syllabus-content">
-              <p><strong>Психометрика и надёжность шкал:</strong> внутренняя согласованность опросников, Альфа Кронбаха, Омега Макдональда, Z-стандартизация.</p>
-              <p><strong>Дисперсионный и корреляционный анализ:</strong> однофакторный и многофакторный ANOVA, повторные измерения (Repeated Measures), ANCOVA, MANOVA, критерии Тьюки и Шеффе, Partial Eta Squared; корреляции Пирсона, Спирмена, Кендалла.</p>
-              <p><strong>Факторный и кластерный анализ:</strong> эксплораторный факторный анализ (EFA) и метод главных компонент (PCA), критерий Бартлетта, мера KMO, график Кеттелла (Scree plot), вращения Varimax, Promax, Oblimin; иерархическая кластеризация (метод Уорда, дендрограммы) и k-means.</p>
-            </div>
-          </details>
-        </div>
-
-        <!-- БЛОК 6 -->
-        <div class="course-card">
-          <div class="course-watermark">ROC</div>
-          <span class="course-num">Блок 06</span>
-          <h3 class="course-title">Биостатистика и медстатистика</h3>
-          <div class="course-tagline">«От сырой клинической базы пациентов до доказательных выводов и защиты перед комиссией»</div>
-          <ul class="course-summary-points">
-            <li>Для врачей, биологов, аспирантов и соискателей степеней</li>
-            <li>Параметрические и непараметрические сравнения групп, таблицы 2×2</li>
-            <li>ROC-анализ, кривые выживаемости Каплана — Мейера и регрессия Кокса</li>
-          </ul>
-          <details class="syllabus">
-            <summary>Полная программа</summary>
-            <div class="syllabus-content">
-              <p><strong>Сравнение клинических групп:</strong> проверка нормальности (Шапиро — Уилка, Колмогорова — Смирнова), среднее и SD, медиана и IQR; t-критерий Стьюдента и Уэлча, Манна — Уитни, Вилкоксона, Краскела — Уоллиса, Фридмана, тест Данна и поправки Бонферрони, Холма, Бенджамини — Хохберга (FDR).</p>
-              <p><strong>Качественные признаки и диагностика:</strong> хи-квадрат Пирсона, поправка Йейтса, точный критерий Фишера, МакНемара, отношение шансов (OR) и относительный риск (RR); чувствительность, специфичность, ROC-анализ, AUC, порог отсечения по индексу Юдена.</p>
-              <p><strong>Анализ выживаемости и планирование:</strong> кривые Каплана — Мейера, логранговый критерий, регрессия пропорциональных рисков Кокса (Hazard Ratio); расчёт объёма выборки и мощности (Power Analysis).</p>
-            </div>
-          </details>
-        </div>
-      </div>
-
-      <!-- ДОПОЛНИТЕЛЬНАЯ ПЛАШКА: ML И СОФТ -->
-      <div class="ml-bar">
-        <div>
-          <h4>Машинное обучение (ML) на табличных данных</h4>
-          <p>Регуляризация (Lasso, Ridge, ElasticNet), деревья решений, SVM, Random Forest, градиентный бустинг (CatBoost, XGBoost, LightGBM), кросс-валидация, работа с несбалансированными классами, метрики (Precision, Recall, F1, ROC-AUC, PR-AUC).</p>
-        </div>
-        <div>
-          <h4>Инструменты и статистические пакеты (по задаче)</h4>
-          <p><strong>Без программирования (кнопками):</strong> IBM SPSS Statistics, Jamovi, Excel.<br>
-          <strong>Эконометрические и кодовые среды:</strong> Stata, Gretl, EViews, R / RStudio (tidyverse, plm, fixest, survival, psych), Python (pandas, statsmodels, scikit-learn).</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. ОТЗЫВЫ И КЕЙСЫ + КНОПКИ ПРОФИ, АВИТО, ТГ -->
-  <section id="reviews">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Результаты и независимые площадки</span>
-        <h2 class="section-title">Кейсы и отзывы учеников</h2>
-        <p class="section-desc">Вы можете изучить подробные истории подготовки в моём Telegram-канале по тегу <strong>#отзывы</strong>, а также проверить независимые отзывы на Профи.ру и Авито.</p>
-      </div>
-
-      <div class="reviews-grid">
-        <div class="review-card">
-          <span class="review-quote-mark">«</span>
-          <div>
-            <span class="review-tag">#биостатистика • Медицинский вуз (Турция)</span>
-            <p class="review-text">«Разобрали сравнение 2 и 3 независимых групп, параметрические и непараметрические критерии и интерпретацию на медицинских данных с нуля. Предмет успешно сдан!»</p>
-          </div>
-          <div class="review-author">Студентка медицинского факультета</div>
-        </div>
-        <div class="review-card">
-          <span class="review-quote-mark">«</span>
-          <div>
-            <span class="review-tag">#эконометрика • НИУ ВШЭ</span>
-            <p class="review-text">«За несколько интенсивных занятий разложили по полочкам задачи по Демешеву и Магнусу, свойства оценок и тесты. На экзамене было полное понимание каждого шага».</p>
-          </div>
-          <div class="review-author">Студент экономических программ</div>
-        </div>
-        <div class="review-card">
-          <span class="review-quote-mark">«</span>
-          <div>
-            <span class="review-tag">#анализ_данных • ВКР и защита</span>
-            <p class="review-text">«Посчитали эмпирическую часть в Jamovi/SPSS без единой строчки кода и отрепетировали ответы на каверзные вопросы. Комиссия осталась в восторге от обоснования методов».</p>
-          </div>
-          <div class="review-author">Магистрант социальных наук</div>
-        </div>
-      </div>
-
-      <!-- ПАНЕЛЬ ПРОВЕРКИ ОТЗЫВОВ НА ПРОФИ, АВИТО И В ТГ -->
-      <div class="external-reviews-bar">
-        <div class="external-reviews-text">
-          <h4>Проверить все отзывы на независимых ресурсах</h4>
-          <p>Реальные оценки учеников, скриншоты переписок и подтверждённые анкеты преподавателя:</p>
-        </div>
-        <div class="external-reviews-buttons">
-          <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ПРОФИ И АВИТО -->
-          <a href="https://profi.ru/profile/GladiyAV/" target="_blank" class="btn btn-primary">★ Отзывы на Профи.ру</a>
-          <a href="https://www.avito.ru/brands/cc0873923316e471b132917fe8594988" target="_blank" class="btn btn-outline">★ Отзывы на Авито</a>
-          <a href="https://t.me/andrey_stat_lab" target="_blank" class="btn btn-soft">Скриншоты в Telegram (#отзывы) →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. ФОРМАТЫ И СТОИМОСТЬ -->
-  <section id="pricing">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Условия работы</span>
-        <h2 class="section-title">Форматы и стоимость занятий</h2>
-        <p class="section-desc">Индивидуальная работа онлайн и занятия в мини-группах со своего потока: системное ведение в семестре, целевая подготовка к экзамену за 3–6 занятий или сопровождение исследования.</p>
-      </div>
-
-      <!-- СЕТКА ИЗ 3 КАРТОЧЕК -->
-      <div class="pricing-grid">
-        <!-- Карточка 1 -->
-        <div class="price-card">
-          <div>
-            <h3>Индивидуально • 60 мин</h3>
-            <div class="price-amount">3 000 ₽</div>
-            <p class="price-desc"><strong>60 минут.</strong> Удобно для регулярных еженедельных занятий в течение семестра, разбора домашних задач и точечных вопросов по теории.</p>
-          </div>
-          <a href="https://t.me/andrey_stat_lab" target="_blank" class="btn btn-outline">Записаться на занятие</a>
-        </div>
-
-        <!-- Карточка 2 -->
-        <div class="price-card featured">
-          <div>
-            <h3>Индивидуально • 90 мин</h3>
-            <div class="price-amount">4 500 ₽</div>
-            <p class="price-desc"><strong>90 минут (академическая пара).</strong> Оптимальный формат для плотной подготовки к экзаменам, разбора объёмных билетов и работы с данными для ВКР и диссертаций.</p>
-          </div>
-          <a href="https://t.me/andrey_stat_lab" target="_blank" class="btn btn-primary">Выбрать формат 90 минут</a>
-        </div>
-
-        <!-- Карточка 3 (Два пакета внутри) -->
-        <div class="price-card">
-          <div>
-            <h3>Пакет из 4 занятий</h3>
-            <div style="margin: 14px 0 16px; display: flex; flex-direction: column; gap: 10px;">
-              <div style="background: #F4EFE6; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--border); display: flex; justify-content: space-between; align-items: baseline;">
-                <div>
-                  <strong style="font-size: 15px;">4 × 60 минут</strong>
-                  <div style="font-size: 12.5px; color: var(--text-muted);">по 2 750 ₽ за урок</div>
+    <!-- ПЕРВЫЙ ЭКРАН (HERO): ЦЕНА + ЖЕСТКИЙ ФИЛЬТР ("КРИК ДУШИ") БЕЗ КНОПКИ TELEGRAM -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="section-tag">Индивидуальные занятия и консультации по исследованиям</div>
+                <h1>Наука и высшая школа: учимся считать и читать то, что посчитали</h1>
+                
+                <!-- 1. ЦЕНА СРАЗУ ПОД ЗАГОЛОВКОМ -->
+                <div class="hero-price-pill">
+                    <span>Консультация: 3 000 ₽ / час</span>
+                    <span class="sub-price">4 500 ₽ за 90 мин • Мини-группы от 1 600 ₽/ч</span>
                 </div>
-                <div class="serif" style="font-size: 30px; color: var(--accent); font-weight: 700;">11 000 ₽</div>
-              </div>
 
-              <div style="background: #F4EFE6; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--border); display: flex; justify-content: space-between; align-items: baseline;">
-                <div>
-                  <strong style="font-size: 15px;">4 × 90 минут</strong>
-                  <div style="font-size: 12.5px; color: var(--text-muted);">по 4 000 ₽ за урок</div>
+                <p class="hero-sub">
+                    Эконометрика, математическая статистика, теория вероятностей и анализ данных в <strong>R, Python, Stata, SPSS, Jamovi, Excel</strong> для студентов ведущих вузов и исследователей.
+                </p>
+
+                <!-- 2. ЖЕСТКИЙ ФИЛЬТР В НАЧАЛЕ (ЧТОБЫ СРАЗУ ОТСЕЯТЬ ХАЛЯВЩИКОВ И ЗАКАЗЧИКОВ) -->
+                <div class="hero-warning-box">
+                    <span class="hero-warning-title">⚠️ Прочитайте перед тем, как писать:</span>
+                    <div class="hero-warning-lead">
+                        Пожалуйста, не пишите мне, если вы не готовы учиться и тратить на это своё личное время.
+                    </div>
+                    <ul class="hero-warning-list">
+                        <li><strong>Никаких работ «на заказ» (гострайтинга):</strong> нельзя просто скинуть мне задачу или датасет, заплатить деньги и получить готовый файл к дедлайну. Экзамены в микронаушник я тоже не решаю.</li>
+                        <li><strong>Вы платите не только деньгами, но и своим временем:</strong> вся работа — от теории до написания кода и разбора таблиц — идет <strong>только вживую на наших созвонах</strong>. <span class="investment-highlight">Работая со мной, вы вкладываетесь в себя: становитесь умнее и сильнее как специалист.</span></li>
+                        <li><strong>С вас — присутствие и внимание, с меня — понятное объяснение:</strong> на занятии я подробно вещаю, показываю всё на экране и веду вас за руку, но вы должны пройти этот путь вместе со мной, чтобы понимать каждую цифру в своей работе.</li>
+                    </ul>
                 </div>
-                <div class="serif" style="font-size: 30px; color: var(--accent); font-weight: 700;">16 000 ₽</div>
-              </div>
-            </div>
-            <p class="price-desc">Для целевой подготовки к контрольной, экзамену или последовательной проработки расчётной главы диплома.</p>
-          </div>
-          <a href="https://t.me/andrey_stat_lab" target="_blank" class="btn btn-outline">Забронировать пакет</a>
-        </div>
-      </div>
 
-      <!-- ШИРОКИЙ БЛОК ГРУППОВЫХ ЗАНЯТИЙ -->
-      <div class="ml-bar" style="margin-top: 24px; background: #FAF6EE; border: 2px solid var(--accent); align-items: center;">
-        <div>
-          <span class="pov-badge" style="margin-bottom: 10px;">Выгодно для однокурсников</span>
-          <h3 style="font-size: 28px; margin-bottom: 10px; color: var(--text-main);">Занятия в паре и мини-группах (2–4 человека)</h3>
-          <p style="font-size: 15px; color: var(--text-muted);">
-            Учитесь на одном курсе или готовитесь к одному экзамену? <strong>Соберите мини-группу из однокурсников сами</strong> и приходите вместе. Мы будем идти строго по программе вашего потока, разбирать ваши общие задачи и билеты, а стоимость для каждого участника будет существенно ниже индивидуального тарифа.
-          </p>
-        </div>
+                <!-- Ссылки на независимые отзывы -->
+                <div class="hero-reviews-links">
+                    <a href="https://profi.ru/profile/GladiyAV/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Отзывы на Профи.ру (5.0 ★)</a>
+                    <a href="https://www.avito.ru/brands/cc0873923316e471b132917fe8594988" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Профиль и отзывы на Авито</a>
+                </div>
+            </div>
 
-        <div style="background: var(--bg-card); padding: 24px; border-radius: 12px; border: 1px solid var(--border);">
-          <h4 style="font-size: 20px; margin-bottom: 12px; color: var(--accent);">Стоимость с человека (60 / 90 мин):</h4>
-          <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px;">
-            <div style="background: #F4EFE6; padding: 10px 14px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 14.5px; font-weight: 600; color: var(--text-main);">В паре (2 человека)</span>
-              <span class="serif" style="font-size: 24px; font-weight: 700; color: var(--accent);">2 200 / 3 000 ₽</span>
+            <div class="hero-banner">
+                <img src="banner.jpg" alt="Репетитор по эконометрике, статистике и теории вероятностей онлайн — Андрей, ANDREY STAT LAB" onerror="this.style.display='none'">
             </div>
-            <div style="background: #F4EFE6; padding: 10px 14px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 14.5px; font-weight: 600; color: var(--text-main);">Мини-группа (3–4 чел.)</span>
-              <span class="serif" style="font-size: 24px; font-weight: 700; color: var(--accent);">1 600 / 2 200 ₽</span>
-            </div>
-          </div>
-          <a href="https://t.me/andrey_stat_lab" target="_blank" class="btn btn-primary" style="width: 100%;">Записаться группой</a>
         </div>
-      </div>
+    </section>
+
+    <!-- Лента доверия: Программы и Вузы -->
+    <div class="trust-strip">
+        <div class="container trust-grid">
+            <div>
+                <div class="trust-group-title">Рабочая среда и пакеты анализа</div>
+                <div class="badge-list">
+                    <span class="badge accent">SPSS</span>
+                    <span class="badge accent">Jamovi</span>
+                    <span class="badge accent">Stata</span>
+                    <span class="badge accent">R / RStudio</span>
+                    <span class="badge accent">Python</span>
+                    <span class="badge">Gretl</span>
+                    <span class="badge">EViews</span>
+                    <span class="badge">MS Excel</span>
+                </div>
+            </div>
+            <div>
+                <div class="trust-group-title">Опыт работы с программами ведущих вузов</div>
+                <div class="badge-list">
+                    <span class="badge">НИУ ВШЭ</span>
+                    <span class="badge">МГУ</span>
+                    <span class="badge">МГИМО</span>
+                    <span class="badge">СПбГУ</span>
+                    <span class="badge">ФинУнивер</span>
+                    <span class="badge">РАНХиГС</span>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <!-- 8. FAQ + БЛОК СВЯЗИ ВО ВСЕХ МЕССЕНДЖЕРАХ -->
-  <section id="faq">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Частые вопросы</span>
-        <h2 class="section-title">FAQ</h2>
-      </div>
-
-      <div class="faq-layout">
-        <div class="faq-list">
-          <details class="faq-item" open>
-            <summary>Ищу репетитора по эконометрике или статистике для подготовки к экзамену — как начать работу?</summary>
-            <p>Напишите мне в Telegram, ВКонтакте или MAX и скидывайте ваши задачи, условия, программу курса (силлабус) или файлы с данными. Мы посмотрим объём материала, при необходимости проведём короткий 15-минутный созвон-знакомство и выберем удобное время для первого занятия.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Можно ли заниматься в паре с однокурсником или мини-группой?</summary>
-            <p>Да, и это отличный формат для подготовки к сессии, коллоквиумам или контрольным. Вы сами формируете группу из 2–4 человек со своего курса или потока (чтобы у всех была единая учебная программа и одинаковые требования преподавателя). Так каждый участник платит заметно меньше, а эффективность живого разбора задач полностью сохраняется.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Нужно ли мне уметь программировать для занятий?</summary>
-            <p>Вовсе нет. Большинство университетских курсов по теории вероятностей, матстату и эконометрике строятся вокруг аналитического решения задач. А если вам нужно посчитать данные для диплома или статьи, мы можем использовать SPSS или Jamovi — там все расчёты делаются в понятном кнопочном интерфейсе без кода.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Вы работаете только с экономистами или гуманитариям и медикам тоже помогаете?</summary>
-            <p>Я регулярно работаю как с экономистами и финансистами (от базового МНК до GARCH и панельных данных), так и с психологами, социологами, политологами, лингвистами, менеджерами и врачами. Для гуманитарных и медицинских направлений обучение строится без лишней матаналитической тяжести — с акцентом на смысл критериев и интерпретацию.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary>Можете ли вы просто сделать работу или решить задачи вместо меня?</summary>
-            <p>Нет. Я не беру заказы «решить под ключ без вашего участия» и не помогаю списывать на экзаменах. Мы разбираем ваши задачи и данные вместе, чтобы вы вышли на экзамен или защиту полноценным автором, которого невозможно сбить дополнительным вопросом.</p>
-          </details>
-        </div>
-
-        <!-- БОКОВАЯ КАРТОЧКА СО ВСЕМИ КАНАЛАМИ СВЯЗИ -->
-        <div class="faq-cta-box">
-          <h3>Обсудим вашу задачу?</h3>
-          <p>Скидывайте силлабус курса, список тем к экзамену или описание вашего исследования в любой удобный мессенджер:</p>
-          
-          <div class="cta-buttons-stack">
-            <a href="https://t.me/andrey_stat_lab" target="_blank" class="btn btn-white">Написать в Telegram →</a>
-            <div class="cta-row-2">
-              <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ВК И MAX -->
-              <a href="http://vk.com/aglady" target="_blank" class="btn btn-ghost-white">ВКонтакте</a>
-              <a href="https://max.ru/u/f9LHodD0cOJ77Nlr9GODmKtq-t-IbRnqo2VT8OGLGlqiQ3r0kFTW__Do8PE" target="_blank" class="btn btn-ghost-white">MAX</a>
+    <!-- БЛОК 1: ГЛАЗАМИ КЛИЕНТА -->
+    <section id="client">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Кому подойдут занятия</span>
+                <h2 class="section-title">Узнаете свою ситуацию?</h2>
+                <p class="section-desc">Ко мне приходят как студенты сложных количественных программ, так и гуманитарии, врачи и исследователи, которым нужно подружиться с цифрами и защитить свою работу.</p>
             </div>
-          </div>
 
-          <div class="cta-profiles-divider">Мои анкеты и отзывы:</div>
-          <div class="cta-row-2">
-            <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ПРОФИ И АВИТО -->
-            <a href="https://profi.ru/profile/GladiyAV/" target="_blank" class="btn btn-ghost-white">★ Профи.ру</a>
-            <a href="https://www.avito.ru/brands/cc0873923316e471b132917fe8594988" target="_blank" class="btn btn-ghost-white">★ Авито</a>
-          </div>
+            <div class="pov-grid">
+                <div class="pov-card">
+                    <div>
+                        <span class="pov-role"><span class="math-icon">∑</span> Экономист / Финансист</span>
+                        <div class="pov-quote">«Лектор пишет трехэтажные матричные выводы на доске, а на контрольной и в RStudio я не понимаю, с чего начать и как интерпретировать коэффициенты...»</div>
+                        <ul class="clean-list">
+                            <li>Переводим сухие теоремы на понятный язык.</li>
+                            <li>Разбираем задачи из ваших семинарских листков.</li>
+                            <li>Пишем чистый код в R, Stata или Gretl для домашек и курсовых.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pov-card">
+                    <div>
+                        <span class="pov-role"><span class="math-icon">α</span> Социолог / Психолог</span>
+                        <div class="pov-quote">«Я гуманитарий. У меня есть база опроса в Excel, а научрук требует посчитать критерии, факторный анализ и регрессию в SPSS или Jamovi...»</div>
+                        <ul class="clean-list">
+                            <li>Спокойно и без пугающих формул проходим весь путь.</li>
+                            <li>Чистим таблицу данных и выбираем правильный тест.</li>
+                            <li>Нажимаем нужные кнопки на созвоне и грамотно описываем выводы для ВКР.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pov-card">
+                    <div>
+                        <span class="pov-role"><span class="math-icon">χ²</span> Врач / Биолог / Аспирант</span>
+                        <div class="pov-quote">«Собрана клиническая база пациентов. Нужно достоверно сравнить группы, построить ROC-кривые, оценить риски и оформить статистику для статьи...»</div>
+                        <ul class="clean-list">
+                            <li>Разбираем биостатистику на вашей реальной выборке.</li>
+                            <li>Проверяем нормальность и считаем непараметрику.</li>
+                            <li>Строим каплан-мейеровские кривые выживаемости и таблицы по стандартам журналов.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pov-card">
+                    <div>
+                        <span class="pov-role"><span class="math-icon">β̂<sub>IV</sub></span> Продвинутый курс</span>
+                        <div class="pov-quote">«Нужно разобраться с эндогенностью, подобрать инструментальные переменные, оценить панельные данные (FE/RE/GMM) или временные ряды (ARIMA/GARCH)...»</div>
+                        <ul class="clean-list">
+                            <li>Глубокая проработка методологии исследования.</li>
+                            <li>Помогаю выстроить корректный эконометрический дизайн.</li>
+                            <li>Готовим железобетонные ответы на каверзные вопросы комиссии.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pov-card">
+                    <div>
+                        <span class="pov-role"><span class="math-icon">EN</span> Обучение на английском</span>
+                        <div class="pov-quote">«Учусь на англоязычной программе (МИЭФ, зарубежный вуз), все учебники, лекции и задания по Statistics & Econometrics — полностью на английском...»</div>
+                        <ul class="clean-list">
+                            <li>Свободно разбираем англоязычные силлабусы и статьи.</li>
+                            <li>Работаем по классическим учебникам (Wooldridge, Stock & Watson, Greene).</li>
+                            <li>Без потерь смысла при переводе терминологии.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pov-card not-for-me">
+                    <div>
+                        <span class="pov-role"><span class="math-icon">✕</span> Не ко мне (без гострайтинга)</span>
+                        <div class="pov-quote">«Мне не нужно ничего объяснять и созваниваться. Вот задание и база данных — просто сделайте всё сами и пришлите готовый файл к утру...»</div>
+                        <ul class="clean-list">
+                            <li><strong>Такие заказы я не беру.</strong> Я не делаю проекты в фоновом режиме без вашего участия.</li>
+                            <li>Вся работа идет только вживую на наших занятиях.</li>
+                            <li>Моя задача — вложить знания в вашу голову, чтобы вы стали сильнее как специалист.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ПОДВАЛ С КОНТАКТАМИ И SEO-ХВОСТОМ -->
-  <footer>
-    <div class="container">
-      <p style="font-weight: 800; letter-spacing: 0.1em; color: var(--text-main); margin-bottom: 6px;">ANDREY STAT LAB • Гладий Андрей Васильевич</p>
-      <p>Наука и высшая школа: индивидуальное и групповое обучение по эконометрике, статистике и анализу данных</p>
-      
-      <div class="footer-links-row">
-        <a href="https://t.me/andrey_stat_lab" target="_blank" class="platform-link">Telegram</a>
-        <!-- ВСТАВЬТЕ ВАШИ ССЫЛКИ НА ВК, MAX, ПРОФИ И АВИТО -->
-        <a href="http://vk.com/aglady" target="_blank" class="platform-link">ВКонтакте</a>
-        <a href="https://max.ru/u/f9LHodD0cOJ77Nlr9GODmKtq-t-IbRnqo2VT8OGLGlqiQ3r0kFTW__Do8PE" target="_blank" class="platform-link">MAX</a>
-        <a href="https://profi.ru/profile/GladiyAV/" target="_blank" class="platform-link"><span class="platform-star">★</span> Профи.ру</a>
-        <a href="https://www.avito.ru/brands/cc0873923316e471b132917fe8594988" target="_blank" class="platform-link"><span class="platform-star">★</span> Авито</a>
-      </div>
-      
-      <p class="seo-footer-text">
-        Частный репетитор по эконометрике, математической статистике, теории вероятностей и биостатистике онлайн (Москва, Санкт-Петербург и зарубежные вузы). Индивидуальная и групповая подготовка к экзаменам, контрольным и коллоквиумам НИУ ВШЭ (ФЭН, МИЭФ, ВШБ), МГУ, СПБГУ, МГИМО, Финансового университета, РАНХиГС. Консультации и менторство по эмпирическим главам ВКР, магистерских и кандидатских диссертаций для экономистов, социологов, психологов и врачей в SPSS, Jamovi, Stata, R (RStudio), Python, Gretl и EViews.
-      </p>
+    <!-- БЛОК 2: ОБ ЭКСПЕРТЕ -->
+    <section id="expert">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Об эксперте</span>
+                <h2 class="section-title">Кто ведет занятия</h2>
+            </div>
+
+            <div class="expert-layout">
+                <div class="expert-photo-card">
+                    <div class="expert-photo-wrapper">
+                        <img src="photo.jpg" alt="Гладий Андрей Васильевич — репетитор по эконометрике и статистике, магистр машинного обучения НИУ ВШЭ">
+                    </div>
+                    <div class="expert-quick-stats">
+                        <div class="stat-box">
+                            <div class="stat-num">5+ лет</div>
+                            <div class="stat-label">опыта преподавания</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-num">250+</div>
+                            <div class="stat-label">учеников и проектов</div>
+                        </div>
+                        <div class="stat-box" style="grid-column: span 2;">
+                            <div class="stat-num">RU / EN</div>
+                            <div class="stat-label">свободная работа с материалами на двух языках</div>
+                        </div>
+                    </div>
+                </div>
+
+<div class="expert-bio">
+    <h3>Гладий Андрей Васильевич</h3>
+    <p style="font-size: 17px; font-weight: 700; color: var(--accent); margin: -6px 0 14px;">Исследователь, аналитик данных, преподаватель</p>
+                    <ul class="clean-list">
+                        <li>Окончил <strong>магистратуру НИУ ВШЭ по машинному обучению (с отличием)</strong>.</li>
+                        <li>Более пяти лет занимаюсь частным преподаванием и научным консультированием: помогаю студентам преодолевать страх перед формулами и кодом, закрывать сложные сессии и выходить на защиту дипломов с полным пониманием своей работы.</li>
+                    </ul>
+
+                    <div class="bio-highlights">
+                        <div class="bio-item">
+                            <strong>Академическая база и знание университетских требований изнутри</strong>
+                            <ul class="clean-list">
+                                <li>Во время учебы в Вышке работал учебным ассистентом по ряду количественных дисциплин.</li>
+                                <li>Отлично знаю, как устроены силлабусы, домашние задания и экзамены в топовых вузах, за какие ошибки снижают баллы и каких ответов ждут преподаватели на защитах.</li>
+                            </ul>
+                        </div>
+                        <div class="bio-item">
+                            <strong>Исследовательский опыт и широкий кругозор</strong>
+                            <ul class="clean-list">
+                                <li>Работал в научных лабораториях и прикладных проектах.</li>
+                                <li>Помимо классической эконометрики и матстатистики, ориентируюсь в смежных областях — от психометрики и социологических опросов до биостатистики и алгоритмов машинного обучения.</li>
+                            </ul>
+                        </div>
+                        <div class="bio-item">
+                            <strong>Педагогический подход: от интуиции к строгости</strong>
+                            <ul class="clean-list">
+                                <li>Не заставляю зубрить формулы вслепую.</li>
+                                <li>Сначала разбираем смысл метода «на пальцах» и визуализациях, затем аккуратно выводим математику и сразу закрепляем всё на реальных данных в коде или статпакете.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="books-box">
+                        <h4>Ориентируюсь на классические российские и международные учебники:</h4>
+                        <div class="badge-list">
+                            <span class="badge">Магнус, Катышев, Пересецкий</span>
+                            <span class="badge">Борзых, Демешев</span>
+                            <span class="badge">Картаев</span>
+                            <span class="badge">Елисеева</span>
+                            <span class="badge">Wooldridge</span>
+                            <span class="badge">Stock & Watson</span>
+                            <span class="badge">Gujarati</span>
+                            <span class="badge">Greene</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perks-grid">
+                <div class="perk-card">
+                    <h4>Индивидуальный трек</h4>
+                    <p>Никаких шаблонных лекций: занимаемся строго по вашему силлабусу, вашим семинарским листкам или вашей базе данных для ВКР.</p>
+                </div>
+<div class="perk-card">
+    <h4>От цифр к выводам</h4>
+    <p>Получили таблицу в R или SPSS — и что она нам говорит? На занятии разбираем, как своими словами объяснить результат: что данные показывают, а чего по ним утверждать нельзя.</p>
+</div>
+                <div class="perk-card">
+                    <h4>Поддержка между уроками</h4>
+                    <p>Остаюсь на связи в Telegram: можно задать короткий вопрос по домашке или уточнить ошибку в коде, не дожидаясь следующего созвона.</p>
+                </div>
+                <div class="perk-card">
+                    <h4>Спокойная атмосфера</h4>
+                    <p>Никакого снобизма и давления. Можно задавать любые «глупые» вопросы столько раз, сколько нужно для полного понимания.</p>
+                </div>
+            </div>
+
+            <!-- ПЕРВАЯ КНОПКА TELEGRAM НА СТРАНИЦЕ (После фильтра в шапке и знакомства с экспертом) -->
+            <div class="cta-safe-zone">
+                <div class="cta-safe-title">Подходит такой формат работы?</div>
+                <p class="cta-safe-sub">Напишите мне в Telegram, кратко опишите свой курс или исследовательскую задачу — мы подберем удобное время для первого занятия.</p>
+                <div class="cta-safe-label">Стоимость индивидуального занятия — 3 000 ₽ / час</div>
+                <div>
+                    <a href="https://t.me/andrey_stat_lab" target="_blank" rel="noopener" class="btn btn-primary">
+                        Написать в Telegram (3 000 ₽/ч)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 3: ФИЛОСОФИЯ И ЧЕМ МЫ ЗАНИМАЕМСЯ -->
+    <section id="what-we-do" class="dark-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Философия и формат</span>
+                <h2 class="section-title">Учимся понимать свои данные, а не имитировать науку</h2>
+                <p class="section-desc">Количественные дисциплины пугают многих. Когда дедлайн близко, возникает соблазн пойти по легкому пути — но на серьезной защите или экзамене это почти всегда приводит к провалу.</p>
+            </div>
+
+            <div class="philosophy-grid">
+                <div class="pain-box">
+                    <h3>Почему «быстрые решения» не работают?</h3>
+                    <p>В хороших университетах преподаватели и члены комиссии видят несамостоятельную работу за минуту:</p>
+                    <div class="bad-strategies">
+                        <div class="bad-item">
+                            <strong>1. Заказ работы «под ключ» (гострайтинг)</strong>
+                            Исполнитель присылает вам красивый текст и таблицы, но на защите звучит простой вопрос: <em>«Почему вы выбрали именно эту спецификацию и как интерпретируете этот p-value?»</em> — и студент теряется, рискуя получить неуд.
+                        </div>
+                        <div class="bad-item">
+                            <strong>2. Слепое копирование из ChatGPT / LLM</strong>
+                            Нейросети отлично пишут базовый код, но регулярно выдумывают несуществующие тесты, путают предпосылки моделей и дают гладкие, но методологически абсурдные выводы.
+                        </div>
+                        <div class="bad-item">
+                            <strong>3. Механическое прокликивание кнопок в SPSS</strong>
+                            Можно получить десяток таблиц за минуту, но без понимания природы переменных и ограничений критерия эти расчёты не имеют научной ценности.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goals-stack">
+                    <div class="goal-card">
+                        <h4><span class="goal-num">Цель 01</span> Сформировать статистическое мышление</h4>
+                        <p>Понять логику проверки гипотез, распределений и регрессионных моделей. Когда вы понимаете суть, вы больше не боитесь забыть формулу на экзамене — вы можете вывести или объяснить её своими словами.</p>
+                    </div>
+                    <div class="goal-card">
+                        <h4><span class="goal-num">Цель 02</span> Свободно владеть инструментом и кодом</h4>
+                        <p>Перестать бояться консоли R, Python или интерфейса Stata и SPSS. Мы разбираем каждую строчку кода, чтобы вы могли самостоятельно загрузить данные, очистить их, построить модели и красивые графики.</p>
+                    </div>
+                    <div class="goal-card">
+                        <h4><span class="goal-num">Цель 03</span> Уверенно защитить свою работу перед комиссией</h4>
+                        <p>В курсовой, ВКР или научной статье вы будете автором каждой цифры. Мы репетируем аргументацию: почему выбран этот метод, как проверены предпосылки и о чем реально говорят ваши результаты.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="formats-title">В каких форматах мы работаем:</h3>
+            <div class="formats-grid">
+                <div class="format-item">
+                    <h4><span class="format-icon">I</span> Сопровождение университетского курса</h4>
+                    <p>Идем параллельно вашим лекциям и семинарам в течение семестра. Разбираем сложные темы, решаем домашние задания, готовимся к коллоквиумам и контрольным работам без авралов.</p>
+                </div>
+                <div class="format-item">
+                    <h4><span class="format-icon">II</span> Консультации по эмпирической части ВКР, дипломов и статей</h4>
+                    <p>Вместе формулируем гипотезы, подбираем методологию, чистим ваши данные, проводим расчеты на созвоне и учимся грамотно оформлять и интерпретировать результаты по академическим стандартам.</p>
+                </div>
+                <div class="format-item">
+                    <h4><span class="format-icon">III</span> Экспресс-подготовка к экзаменам и пересдачам</h4>
+                    <p>Когда до экзамена осталась неделя или две: диагностируем пробелы, прорешиваем реальные билеты и варианты прошлых лет вашего вуза, фокусируясь на самых частых типах задач.</p>
+                </div>
+                <div class="format-item">
+                    <h4><span class="format-icon">IV</span> Обучение анализу данных «для себя» и работы</h4>
+                    <p>Для исследователей, аналитиков, врачей и социологов, которым нужно освоить R, Python, SPSS или Jamovi с нуля для решения рабочих и научных задач на реальных датасетах.</p>
+                </div>
+            </div>
+
+            <div class="process-strip">
+                <div class="step-item">
+                    <div class="step-num">Шаг 01</div>
+                    <h5>Запрос и материалы</h5>
+                    <p>Вы пишете мне в Telegram, присылаете силлабус, примеры задач или описание вашей темы ВКР.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">Шаг 02</div>
+                    <h5>Оценка и план</h5>
+                    <p>Я бесплатно изучаю материалы, честно оцениваю объем работы и предлагаю план занятий.</p>
+                </div>
+<div class="step-item">
+    <div class="step-num">Шаг 03</div>
+    <h5>Онлайн-занятие</h5>
+    <p>Разбираем теорию и практику вживую с демонстрацией экрана. Всё объясняю пошагово.</p>
+</div>
+<div class="step-item">
+    <div class="step-num">Шаг 04</div>
+    <h5>Материалы после урока</h5>
+    <p>У вас остаются все наработки, рабочий код и файлы расчетов, которые мы собрали вместе на созвоне.</p>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 4: КУРСЫ И СИЛЛАБУСЫ -->
+    <section id="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Учебные программы</span>
+                <h2 class="section-title">Дисциплины и подробные силлабусы</h2>
+                <p class="section-desc">Ниже приведены основные блоки тем. Нажмите «Развернуть темы» внутри карточки, чтобы увидеть детальное содержание каждого направления.</p>
+            </div>
+
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div>
+                        <div class="course-cat">Блок 01 • Фундамент</div>
+                        <h3>Теория вероятностей</h3>
+                        <p class="course-summary">От классической комбинаторики до предельных теорем. Учимся видеть логику случайных явлений, а не просто угадывать, какую формулу подставить.</p>
+                    </div>
+                    <details class="syllabus">
+                        <summary>Содержание курса</summary>
+                        <div class="syllabus-content">
+                            <ul>
+                                <li>События, вероятностное пространство, комбинаторика, условная вероятность.</li>
+                                <li>Формула полной вероятности и теорема Байеса.</li>
+                                <li>Дискретные и абсолютно непрерывные случайные величины (ФР, плотность).</li>
+                                <li>Основные распределения: биномиальное, Пуассона, геометрическое, равномерное, показательное, нормальное.</li>
+                                <li>Числовые характеристики: математическое ожидание, дисперсия, ковариация, корреляция.</li>
+                                <li>Многомерные распределения, условное математическое ожидание (УМО).</li>
+                                <li>Закон больших чисел (ЗБЧ) и Центральная предельная теорема (ЦПТ).</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="course-card">
+                    <div>
+                        <div class="course-cat">Блок 02 • Вывод и гипотезы</div>
+                        <h3>Математическая статистика</h3>
+                        <p class="course-summary">Переход от теории к данным: как по конечной выборке оценивать параметры генеральной совокупности и строго проверять научные гипотезы.</p>
+                    </div>
+                    <details class="syllabus">
+                        <summary>Содержание курса</summary>
+                        <div class="syllabus-content">
+                            <ul>
+                                <li>Выборка, эмпирическая функция распределения, описательные статистики и визуализация.</li>
+                                <li>Точечное оценивание: несмещенность, состоятельность, эффективность. Информация Фишера и неравенство Рао-Крамера.</li>
+                                <li>Метод моментов (ММ) и Метод максимального правдоподобия (ММП / MLE).</li>
+                                <li>Интервальное оценивание: построение точных и асимптотических доверительных интервалов.</li>
+                                <li>Проверка статистических гипотез: ошибки I и II рода, мощность критерия, лемма Неймана-Пирсона, p-value.</li>
+                                <li>Параметрические критерии (z-test, t-test Стьюдента, F-test) и критерий согласия хи-квадрат Пирсона.</li>
+                                <li>Однофакторный и многофакторный дисперсионный анализ (ANOVA).</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="course-card">
+                    <div>
+                        <div class="course-cat">Блок 03 • Экономика и финансы</div>
+                        <h3>Эконометрика (базовый уровень)</h3>
+                        <p class="course-summary">Классическая линейная регрессия, диагностика нарушений предпосылок Гаусса-Маркова и работа с перекрестными данными (cross-section).</p>
+                    </div>
+                    <details class="syllabus">
+                        <summary>Содержание курса</summary>
+                        <div class="syllabus-content">
+                            <ul>
+                                <li>Парная и множественная линейная регрессия. Метод наименьших квадратов (МНК / OLS) в матричном виде.</li>
+                                <li>Теорема Гаусса-Маркова, свойства оценок МНК, интерпретация коэффициентов (линейные, логарифмические модели).</li>
+                                <li>Проверка гипотез о коэффициентах: t-тесты, F-тест на совместную значимость, тест Чоу.</li>
+                                <li>Фиктивные переменные (dummy variables), перекрестные эффекты (interactions).</li>
+                                <li>Мультиколлинеарность (VIF), пропущенные переменные (OVB), выбор функциональной формы (тест Рамсея RESET).</li>
+                                <li>Гетероскедастичность: тесты Бреуша-Пагана, Уайта, Голдфелда-Квандта; робастные стандартные ошибки (HC), ВМНК (WLS).</li>
+                                <li>Автокорреляция: тест Дарбина-Уотсона, Бреуша-Годфри, ошибки Ньюи-Уэста (HAC).</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="course-card">
+                    <div>
+                        <div class="course-cat">Блок 04 • Магистратура и исследования</div>
+                        <h3>Эконометрика (продвинутый уровень)</h3>
+                        <p class="course-summary">Микроэконометрика, каузальный вывод (Causal Inference), панельные данные и эконометрика временных рядов для серьезных исследований.</p>
+                    </div>
+                    <details class="syllabus">
+                        <summary>Содержание курса</summary>
+                        <div class="syllabus-content">
+                            <ul>
+                                <li><strong>Эндогенность и IV:</strong> инструментальные переменные, ДМНК (2SLS), тесты Хаусмана и Саргана/Хансена.</li>
+                                <li><strong>Панельные данные:</strong> сквозная регрессия (Pooled), модели с фиксированными (FE) и случайными эффектами (RE), динамические панели (Arellano-Bond GMM).</li>
+                                <li><strong>Модели бинарного и множественного выбора:</strong> LPM, Logit, Probit, предельные эффекты (Marginal Effects), Multinomial & Ordered Logit, Tobit, модель Хекмана.</li>
+                                <li><strong>Causal Inference:</strong> метод разности разностей (Difference-in-Differences), разрывный дизайн (RDD), псевдорандомизация (Propensity Score Matching).</li>
+                                <li><strong>Временные ряды:</strong> стационарность, единичные корни (ADF, KPSS), модели ARMA/ARIMA, VAR, коинтеграция (Engle-Granger, Johansen), модели волатильности ARCH/GARCH.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="course-card">
+                    <div>
+                        <div class="course-cat">Блок 05 • Психология, социология, менеджмент</div>
+                        <h3>Адаптированные курсы для гуманитариев</h3>
+                        <p class="course-summary">Анализ данных опросов и экспериментов в SPSS, Jamovi и Excel. Без перегруза доказательствами — упор на смысл и интерпретацию.</p>
+                    </div>
+                    <details class="syllabus">
+                        <summary>Содержание курса</summary>
+                        <div class="syllabus-content">
+                            <ul>
+                                <li>Типы шкал (номинальная, порядковая, интервальная), подготовка и очистка базы анкетирования.</li>
+                                <li>Описательные статистики, таблицы сопряженности (Crosstabs), критерий хи-квадрат и точный тест Фишера.</li>
+                                <li>Сравнение групп: t-критерий Стьюдента (независимые и парные выборки), непараметрика (U-критерий Манна-Уитни, Уилкоксона, Краскела-Уоллиса, Фридмана).</li>
+                                <li>Корреляционный анализ (Пирсон, Спирмен, Кендалл) и линейная/логистическая регрессия.</li>
+                                <li>Надежность шкал опросника (Альфа Кронбаха), эксплораторный факторный анализ (EFA / PCA) и кластерный анализ.</li>
+                                <li>Оформление таблиц и выводов по стандартам APA и ГОСТ для дипломной работы.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="course-card">
+                    <div>
+                        <div class="course-cat">Блок 06 • Медицина и биология</div>
+                        <h3>Биостатистика и медстатистика</h3>
+                        <p class="course-summary">Статистическая обработка клинических и экспериментальных данных для врачей, биологов, фармы и медицинских вузов.</p>
+                    </div>
+                    <details class="syllabus">
+                        <summary>Содержание курса</summary>
+                        <div class="syllabus-content">
+                            <ul>
+                                <li>Дизайн медицинских исследований, расчет объема выборки, проверка нормальности распределения (Шапиро-Уилка, Колмогорова-Смирнова).</li>
+                                <li>Грамотное представление данных: M ± SD против Me [Q1; Q3], параметрические и непараметрические сравнения групп.</li>
+                                <li>Оценка факторов риска: отношение шансов (Odds Ratio — OR), относительный риск (Relative Risk — RR) и их 95% ДИ.</li>
+                                <li>Оценка диагностической ценности тестов: чувствительность, специфичность, ROC-анализ и площадь под кривой (AUC).</li>
+                                <li>Анализ выживаемости (Survival Analysis): кривые Каплана-Мейера, логранговый критерий (Log-rank test), регрессия Кокса (Hazard Ratio).</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="ml-bar">
+                <div>
+                    <div class="course-cat" style="margin-bottom: 4px;">Дополнительное направление</div>
+                    <h3 style="font-size: 24px; margin-bottom: 6px;">Машинное обучение (Machine Learning) и программирование в R / Python</h3>
+                    <p style="font-size: 16px; color: var(--text-muted);">Линейные модели с регуляризацией (Lasso, Ridge), деревья решений, Random Forest, градиентный бустинг (CatBoost, XGBoost), кластеризация, кросс-валидация и метрики качества (pandas, scikit-learn, tidyverse, ggplot2).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 5: ОТЗЫВЫ -->
+    <section id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Обратная связь</span>
+                <h2 class="section-title">Что говорят ученики после занятий</h2>
+                <p class="section-desc">Реальные истории студентов и исследователей. Больше верифицированных отзывов всегда можно прочитать на независимых площадках.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div>
+                        <span class="review-tag">#биостатистика • Медицинский вуз (Турция)</span>
+                        <p class="review-text">«Обратилась к Андрею для подготовки к университетскому экзамену по биостатистике на английском языке. Материал был сложный, много специфических медицинских задач и таблиц. Андрей невероятно структурно и спокойно разложил каждую тему, мы прорешали все типы заданий из наших лекций. В итоге сдала экзамен с первого раза на высокий балл, хотя до занятий предмет казался неподъемным!»</p>
+                    </div>
+                    <div class="review-author">Студентка медицинского факультета (обучение на английском)</div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <span class="review-tag">#эконометрика • НИУ ВШЭ</span>
+                        <p class="review-text">«Готовились к тяжелой контрольной и экзамену по эконометрике в Вышке. Очень понравилось, что Андрей сам выпускник ВШЭ и прекрасно понимает специфику наших задач, обозначений и требований. За несколько занятий разобрали и матричный вывод МНК, и задачи с инструментальными переменными, и код в R. Впервые в голове сложилась цельная картинка, а не набор разрозненных формул». </p>
+                    </div>
+                    <div class="review-author">Студент бакалавриата НИУ ВШЭ</div>
+                </div>
+
+                <div class="review-card">
+                    <div>
+                        <span class="review-tag">#анализ_данных • ВКР и защита</span>
+                        <p class="review-text">«Пришла с сырой базой данных для магистерской диссертации и полным непониманием, какие модели строить. За три созвона мы вместе почистили выборку, проверили гипотезы, построили регрессии и разобрали каждый коэффициент. Самое ценное — на предзащите комиссия задавала много вопросов по методологии, и я смогла уверенно и аргументированно ответить на каждый из них!»</p>
+                    </div>
+                    <div class="review-author">Магистрантка, защита эмпирической части ВКР</div>
+                </div>
+            </div>
+
+<div class="external-reviews-bar">
+    <div style="max-width: 680px;">
+        <h4 style="font-size: 20px; margin-bottom: 6px;">Все отзывы в открытом доступе</h4>
+        <p style="font-size: 16px; color: var(--text-muted); line-height: 1.55;">
+            Вы можете проверить мой рейтинг и прочитать десятки подтвержденных отзывов на внешних ресурсах, а также по тэгу <strong style="color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 5px;">#отзывы</strong> в моем телеграм-канале <strong style="color: var(--text-main); background: var(--bg-card); padding: 2px 8px; border-radius: 5px; border: 1px solid var(--border); user-select: all;">@andrey_stat_lab_channel</strong>
+        </p>
     </div>
-  </footer>
-<script>
-  setTimeout(function() {
-    if (typeof ym === 'function') {
-      ym(114134030, 'reachGoal', 'timer10');
-    }
-  }, 10000);
-</script>
-  
+    <div class="ext-buttons">
+        <a href="https://profi.ru/profile/GladiyAV/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Анкета на Профи.ру →</a>
+        <a href="https://www.avito.ru/brands/cc0873923316e471b132917fe8594988" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Отзывы на Авито →</a>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- БЛОК 6: ТАРИФЫ И СТОИМОСТЬ -->
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Прозрачные условия</span>
+                <h2 class="section-title">Форматы и стоимость занятий</h2>
+                <p class="section-desc">Фиксированная ставка без скрытых доплат за сложность курса, язык материалов (RU/EN) или используемый статистический пакет.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div>
+                        <h3 class="price-title">Индивидуальное занятие</h3>
+                        <div class="price-sub">Классический академический урок • 60 минут</div>
+                        <div class="price-amount">3 000 ₽ <span>/ 60 мин</span></div>
+                        <div class="price-desc">
+                            <ul class="clean-list">
+                                <li>Регулярная подготовка к семинарам и разбор лекций.</li>
+                                <li>Решение домашних заданий и точечная консультация по коду.</li>
+<li>Индивидуальный темп, разбор ваших материалов и рабочие скрипты с урока.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card featured">
+                    <div class="popular-badge">Оптимально для ВКР и практики</div>
+                    <div>
+                        <h3 class="price-title">Расширенная сессия</h3>
+                        <div class="price-sub">Полноценная университетская пара • 90 минут</div>
+                        <div class="price-amount">4 500 ₽ <span>/ 90 мин</span></div>
+                        <div class="price-desc">
+                            <ul class="clean-list">
+                                <li>Самый удобный формат для глубокого погружения.</li>
+                                <li>Успеваем разобрать теоретическую базу и спокойно написать код в R / Stata / SPSS на ваших данных.</li>
+                                <li>Идеально для прорешивания объемных экзаменационных билетов.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-card">
+                    <div>
+                        <h3 class="price-title">Абонемент на 4 занятия</h3>
+                        <div class="price-sub">Для системной работы в семестре или над дипломом</div>
+                        <div class="price-amount">11 000 ₽ <span>/ 4 × 60 мин</span></div>
+                        <div class="price-desc">
+                            <ul class="clean-list">
+                                <li><strong>4 × 60 минут:</strong> 11 000 ₽ (по 2 750 ₽ за урок).</li>
+                                <li><strong>4 × 90 минут:</strong> 16 000 ₽ (по 4 000 ₽ за урок).</li>
+                                <li>Фиксация удобного расписания и приоритетная поддержка в чате между занятиями.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка мини-групп -->
+            <div class="price-card" style="margin-top: 22px;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
+                    <div style="max-width: 620px;">
+                        <span class="section-tag" style="margin-bottom: 8px;">Выгодно для однокурсников</span>
+                        <h3 class="price-title">Занятия в паре или мини-группе (2–4 человека)</h3>
+                        <p style="font-size: 16px; color: var(--text-muted); margin-top: 6px;">Если вы учитесь на одном потоке и готовитесь к одному и тому же экзамену или контрольной — объединяйтесь с одногруппниками. Мы разбираем ваш общий силлабус и задачи, а стоимость для каждого участника становится значительно ниже.</p>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+                        <div class="stat-box" style="min-width: 190px; padding: 16px;">
+                            <div style="font-size: 13px; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">В паре (2 чел.)</div>
+                            <div class="stat-num" style="font-size: 28px; margin: 6px 0;">2 200 / 3 000 ₽</div>
+                            <div class="stat-label">с человека за 60 / 90 мин</div>
+                        </div>
+                        <div class="stat-box" style="min-width: 190px; padding: 16px;">
+                            <div style="font-size: 13px; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Мини-группа (3–4 чел.)</div>
+                            <div class="stat-num" style="font-size: 28px; margin: 6px 0;">1 600 / 2 200 ₽</div>
+                            <div class="stat-label">с человека за 60 / 90 мин</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 7: FAQ И ФИНАЛЬНАЯ (ВТОРАЯ) КНОПКА ЗАПИСИ -->
+    <section id="faq" style="border-bottom: none;">
+        <div class="container">
+            <div class="section-header" style="margin: 0 auto 36px; text-align: center;">
+                <span class="section-tag">Частые вопросы</span>
+                <h2 class="section-title">Ответы на организационные моменты</h2>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Вы пишете работы на заказ (гострайтинг) или помогаете онлайн во время экзамена?</summary>
+                    <p>Нет, я принципиально не пишу курсовые, дипломы или домашние работы вместо студента «под ключ» и не диктую ответы в микронаушник на экзаменах. Моя цель — научить вас и помочь вам пройти весь путь исследования осознанно. На созвонах мы вместе пишем код, строим модели и разбираем результаты так, чтобы вы понимали каждую строчку и блестяще защитились сами.</p>
+                </details>
+
+<details class="faq-item">
+    <summary>Как проходит онлайн-занятие и что нужно подготовить?</summary>
+    <p>Занимаемся онлайн с демонстрацией экрана: разбираем теорию по вашим материалам, решаем задачи и параллельно работаем с данными и кодом в нужной программе (RStudio, Stata, SPSS, Jamovi, Python или Excel). Чтобы встреча прошла максимально продуктивно, пожалуйста, пришлите мне ваши материалы (условия задач, лекции или датасет) заранее — хотя бы за сутки до урока.</p>
+</details>
+
+                <details class="faq-item">
+                    <summary>Я чистый гуманитарий / медик и совсем не знаю программирования. Мы справимся?</summary>
+                    <p>Безусловно. Более половины моих учеников — социологи, психологи, врачи, биологи и политологи. Во-первых, для большинства задач мы можем использовать дружелюбные пакеты с кнопочным интерфейсом (Jamovi или SPSS), где вообще не нужно писать код. Во-вторых, даже если ваш вуз требует R или Python, я даю готовые понятные шаблоны скриптов и объясняю каждую команду простым человеческим языком.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Сколько занятий потребуется для разбора эмпирической главы ВКР или диплома?</summary>
+                    <p>Всё зависит от готовности вашей базы данных и сложности моделей, но в среднем для полноценной проработки эмпирической части (от очистки таблицы и выбора методологии до расчета моделей, оформления графиков и подготовки речи к защите) хватает от 2 до 4 занятий по 60–90 минут.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Каковы правила переноса или отмены забронированного урока?</summary>
+                    <p>Я ценю взаимное уважение ко времени: перенести или отменить занятие без каких-либо потерь можно не позднее чем за 12 часов до назначенного времени (а для утренних слотов — с вечера предыдущего дня).</p>
+                </details>
+            </div>
+
+            <!-- ВТОРАЯ (И ПОСЛЕДНЯЯ) КНОПКА TELEGRAM В САМОМ КОНЦЕ СТРАНИЦЫ -->
+            <div id="contact" class="final-cta-card">
+                <h3>Готовы спокойно разобраться в предмете или своей исследовательской задаче?</h3>
+                <p>Напишите мне в Telegram, кратко опишите ваш курс, вуз или задачу и прикрепите учебные материалы — я изучу их и предложу план работы.</p>
+                
+                <div class="final-price-reminder">
+                    Консультация: 3 000 ₽ / час (4 500 ₽ / 90 мин) | Только живое обучение на созвонах (без работ на заказ)
+                </div>
+
+                <!-- Защитная зона от случайного клика при скролле -->
+                <div class="final-btn-zone">
+                    <a href="https://t.me/andrey_stat_lab" target="_blank" rel="noopener" class="btn btn-white">
+                        Написать в Telegram (3 000 ₽/ч) →
+                    </a>
+                </div>
+
+                <div class="secondary-contacts">
+                    Дополнительные способы связи (если нет Telegram): 
+                    <a href="http://vk.com/aglady" target="_blank" rel="noopener">ВКонтакте</a> • 
+                    <a href="https://max.ru/u/f9LHodD0cOJ77Nlr9GODmKtq-t-IbRnqo2VT8OGLGlqiQ3r0kFTW__Do8PE" target="_blank" rel="noopener">Мессенджер MAX</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР (Без ссылок на Telegram) -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <div>
+                    <strong style="color: #F6F3EC; font-family: 'Cormorant Garamond', serif; font-size: 20px;">ANDREY STAT LAB</strong>
+                    <p style="margin-top: 4px;">Гладий Андрей Васильевич • Индивидуальные консультации по эконометрике, статистике и анализу данных (3 000 ₽/ч)</p>
+                </div>
+                <div>
+                    © 2025 Все права защищены. Академическая этика: мы не пишем работы на заказ.
+                </div>
+            </div>
+            <div class="seo-footer-text">
+                Ключевые направления подготовки: репетитор по эконометрике онлайн (НИУ ВШЭ, МГУ, МГИМО, СПбГУ, Финансовый университет, РАНХиГС), репетитор по математической статистике и теории вероятностей, биостатистика и медицинская статистика для врачей и аспирантов, статистический анализ данных для психологов и социологов, консультации по эмпирической части ВКР, магистерских и кандидатских диссертаций, обучение работе в R, RStudio, Python, Stata, SPSS, Jamovi, Gretl, EViews, MS Excel.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Таймер 10 секунд для отсечения ботов и случайных кликов -->
+    <script>
+        setTimeout(function() {
+            if (typeof ym === 'function') {
+                ym(114134030, 'reachGoal', 'timer10');
+            }
+        }, 10000);
+    </script>
+
 </body>
 </html>
