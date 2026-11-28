@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://andreystatlab.github.io/</loc>
+    <loc>https://andrey-stat-lab.github.io/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://andreystatlab.github.io/photo.jpg</image:loc>
+      <image:loc>https://andrey-stat-lab.github.io/photo.jpg</image:loc>
       <image:title>Репетитор по эконометрике и математической статистике — Гладий Андрей Васильевич</image:title>
       <image:caption>Индивидуальный репетитор по эконометрике, матстатистике, теории вероятностей и анализу данных (R, Python, Stata, SPSS)</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://andreystatlab.github.io/diplom.jpg</image:loc>
+      <image:loc>https://andrey-stat-lab.github.io/diplom.jpg</image:loc>
       <image:title>Диплом репетитора по эконометрике и статистике — Гладий Андрей Васильевич</image:title>
       <image:caption>Подтверждение квалификации репетитора по эконометрике, статистике и машинному обучению (диплом НИУ ВШЭ с отличием)</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://andreystatlab.github.io/banner.jpg</image:loc>
+      <image:loc>https://andrey-stat-lab.github.io/banner.jpg</image:loc>
       <image:title>Репетитор по эконометрике, статистике и анализу данных в R, Python, Stata, SPSS</image:title>
       <image:caption>Онлайн-консультации и занятия с репетитором по эконометрике и статистике для студентов вузов</image:caption>
     </image:image>
